@@ -1,4 +1,9 @@
+import fs from "fs";
+import path from "path";
+import { branchNameByChannel } from "../../data/ca-phe-muoi-chu-long/find-branch-name/data.js";
+
 function normalize(str) {
+  if (!str) return "";
   return str
     .toLowerCase()
     .normalize("NFD") // bỏ dấu tiếng Việt
@@ -9,16 +14,36 @@ function normalize(str) {
 
 function findExpectedName(appName, expectedList) {
   const normApp = normalize(appName);
+
+  // ---- strict match trước ----
   for (let expected of expectedList) {
     if (normApp.includes(normalize(expected))) {
       return expected;
     }
   }
-  return "Không tìm thấy";
+
+  // ---- nếu strict không match, fallback sang loose ----
+  for (let expected of expectedList) {
+    const normExpected = normalize(expected);
+
+    // Bỏ số nhà đầu chuỗi
+    const normExpectedNoNumber = normExpected.replace(/^\d+\s*/g, "");
+
+    if (normExpectedNoNumber && normApp.includes(normExpectedNoNumber.trim())) {
+      return expected;
+    }
+
+    // Match ngược: appName nằm trong expected
+    if (normExpected.includes(normApp)) {
+      return expected;
+    }
+  }
+
+  // ---- cuối cùng: không tìm thấy thì trả về tên gốc ----
+  return appName;
 }
 
-export default function findBranchName(appBranchName) {
-  // Ví dụ:
+export default function findBranchName() {
   const expectedNames = [
     "66A NGUYỄN HUỆ",
     "68 NGUYỄN HUỆ",
@@ -57,7 +82,7 @@ export default function findBranchName(appBranchName) {
     "77/7A KHU VĂN HẢI - LONG THÀNH",
     "204 HÀ HUY GIÁP - BH",
     "32 TRẦN HƯNG ĐẠO - PHAN THIẾT",
-    "884 PHÚ RIỀNG ĐỎ - BP",
+    "884 PHÚ RIÊNG ĐỎ - BP",
     "615 CMT8 - BÀ RỊA",
     "87 HOÀNG HOA THÁM - VŨNG TÀU",
     "330 TRƯƠNG ĐỊNH",
@@ -85,5 +110,25 @@ export default function findBranchName(appBranchName) {
     "BÙI THỊ TRƯỜNG - CÀ MAU",
   ];
 
-  return findExpectedName(appBranchName, expectedNames);
+  const expectedNameByChannel = branchNameByChannel.map(
+    ({ channelName, branchName }) => ({
+      channelName,
+      channelBranchName: branchName,
+      expectedBranchName: findExpectedName(branchName, expectedNames),
+    })
+  );
+
+  // Đường dẫn file output
+  const outputPath = path.resolve(
+    "./output/ca-phe-muoi-chu-long/find-branch-name/output.json"
+  );
+
+  // Ghi đè file (overwrite)
+  fs.writeFileSync(
+    outputPath,
+    JSON.stringify(expectedNameByChannel, null, 2),
+    "utf-8"
+  );
+
+  return expectedNameByChannel;
 }
