@@ -910,51 +910,6 @@
     "expectedBranchName": "17 TÔN ĐỨC THẮNG"
   },
   {
-    "channelName": "VNPay",
-    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - VŨNG TÀU 102 HOÀNG HOA THÁM",
-    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG - VŨNG TÀU 102 HOÀNG HOA THÁM"
-  },
-  {
-    "channelName": "VNPay",
-    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - BÀ RỊA 615 CÁCH MẠNG THÁNG 8",
-    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG - BÀ RỊA 615 CÁCH MẠNG THÁNG 8"
-  },
-  {
-    "channelName": "VNPay",
-    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - KHA VẠN CÂN 1200A KHA VẠN CÂN",
-    "expectedBranchName": "1200A KHA VẠN CÂN"
-  },
-  {
-    "channelName": "VNPay",
-    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - HOÀNG DIỆU 496 HOÀNG DIỆU",
-    "expectedBranchName": "496 HOÀNG DIỆU"
-  },
-  {
-    "channelName": "VNPay",
-    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - HUỲNH TẤN PHÁT 1568 HUỲNH TẤN PHÁT",
-    "expectedBranchName": "HUỲNH TẤN PHÁT"
-  },
-  {
-    "channelName": "VNPay",
-    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - TỈNH LỘ 8 CỦ CHI",
-    "expectedBranchName": "TỈNH LỘ 8 CỦ CHI"
-  },
-  {
-    "channelName": "VNPay",
-    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  VÕ VĂN KIỆT",
-    "expectedBranchName": "VÕ VĂN KIỆT"
-  },
-  {
-    "channelName": "VNPay",
-    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  BÌNH LONG",
-    "expectedBranchName": "07 BÌNH LONG"
-  },
-  {
-    "channelName": "VNPay",
-    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  NGUYỄN TRUNG TRỰC - PHÚ QUỐC",
-    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  NGUYỄN TRUNG TRỰC - PHÚ QUỐC"
-  },
-  {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Tân An",
     "expectedBranchName": "Cà Phê Muối Chú Long - Tân An"
@@ -1093,5 +1048,90 @@
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - 161 Ngô Tất Tố",
     "expectedBranchName": "161 NGÔ TẤT TỐ"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - VŨNG TÀU 102 HOÀNG HOA THÁM",
+    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG - VŨNG TÀU 102 HOÀNG HOA THÁM"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - TỈNH LỘ 8 CỦ CHI",
+    "expectedBranchName": "TỈNH LỘ 8 CỦ CHI"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - BÀ RỊA 615 CÁCH MẠNG THÁNG 8",
+    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG - BÀ RỊA 615 CÁCH MẠNG THÁNG 8"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - KHA VẠN CÂN 1200A KHA VẠN CÂN",
+    "expectedBranchName": "1200A KHA VẠN CÂN"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG 1/97 KHU PHỐ HÒA LÂN 2",
+    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG 1/97 KHU PHỐ HÒA LÂN 2"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - HOÀNG DIỆU 496 HOÀNG DIỆU",
+    "expectedBranchName": "496 HOÀNG DIỆU"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  HUNG VƯƠNG, HUẾ",
+    "expectedBranchName": "HÙNG VƯƠNG"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - LONG XUYÊN 422 HÀ HOÀNG HỔ",
+    "expectedBranchName": "422 HÀ HOÀNG HỔ"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  BÌNH LONG",
+    "expectedBranchName": "07 BÌNH LONG"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - CLASSIC 404 LÊ VĂN LƯƠNG",
+    "expectedBranchName": "CLASSIC"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - LÊ VĂN SỸ 120 LÊ VĂN SỸ",
+    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG - LÊ VĂN SỸ 120 LÊ VĂN SỸ"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - HUỲNH TẤN PHÁT 1568 HUỲNH TẤN PHÁT",
+    "expectedBranchName": "HUỲNH TẤN PHÁT"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - TRẢNG BOM 2161 QUỐC LỘ 1A, QUẢNG LỘC",
+    "expectedBranchName": "TRẢNG BOM"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - TRƯƠNG ĐỊNH 330 TRƯƠNG ĐỊNH",
+    "expectedBranchName": "330 TRƯƠNG ĐỊNH"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  NGUYỄN TRUNG TRỰC - PHÚ QUỐC",
+    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  NGUYỄN TRUNG TRỰC - PHÚ QUỐC"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - NGUYỄN HỮU CẢNH 137A NGUYỄN HỮU CẢNH",
+    "expectedBranchName": "137A NGUYỄN HỮU CẢNH"
+  },
+  {
+    "channelName": "VNPay",
+    "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  VÕ VĂN KIỆT",
+    "expectedBranchName": "VÕ VĂN KIỆT"
   }
 ]
