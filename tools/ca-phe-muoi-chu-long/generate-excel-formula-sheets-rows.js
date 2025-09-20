@@ -13,6 +13,7 @@ export default function generateExcelFormulaSheetsRows() {
     "Be_Duong_Transfer",
     "Grab_Transfer",
     "VNPAY_Transfer",
+    "ZaloPay_GG_Transfer",
   ];
   const rowRef = "ROWS($A$2:A2)";
   const colRef = "COLUMN()-COLUMN($A$2)+1";
