@@ -2,7 +2,7 @@
   {
     "channelName": "Be",
     "channelBranchName": "Cà Phê Muối Chú Long - Nguyễn Huệ",
-    "expectedBranchName": "68 NGUYỄN HUỆ"
+    "expectedBranchName": "66A NGUYỄN HUỆ"
   },
   {
     "channelName": "Be",
@@ -27,12 +27,12 @@
   {
     "channelName": "Be",
     "channelBranchName": "Cà Phê Muối Chú Long - CMT8",
-    "expectedBranchName": "1349 CMT8"
+    "expectedBranchName": "601 CMT8 TÂY NINH"
   },
   {
     "channelName": "Be",
     "channelBranchName": "Cà Phê Muối Chú Long - Tân Hòa Đông",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Tân Hòa Đông"
+    "expectedBranchName": "307 ĐẶNG NGUYÊN CẨN"
   },
   {
     "channelName": "Be",
@@ -52,22 +52,22 @@
   {
     "channelName": "Be",
     "channelBranchName": "Cà Phê Muối Chú Long - Công Trường Quốc Tế",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Công Trường Quốc Tế"
+    "expectedBranchName": "6B CÔNG TRƯỜNG DÂN CHỦ"
   },
   {
     "channelName": "Be",
     "channelBranchName": "Cà Phê Muối Chú Long - Nguyễn Hữu Cảnh",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Nguyễn Hữu Cảnh"
+    "expectedBranchName": "137A NGUYỄN HỮU CẢNH"
   },
   {
     "channelName": "Be",
     "channelBranchName": "Cà Phê Muối Chú Long - Lê Văn Lương",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Lê Văn Lương"
+    "expectedBranchName": "CLASSIC"
   },
   {
     "channelName": "Be",
     "channelBranchName": "Cà Phê Muối Chú Long - Kha Vạn Cân",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Kha Vạn Cân"
+    "expectedBranchName": "1200A KHA VẠN CÂN"
   },
   {
     "channelName": "Be",
@@ -82,12 +82,12 @@
   {
     "channelName": "Be",
     "channelBranchName": "Cà Phê Muối Chú Long - Thanh Nhàn",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Thanh Nhàn"
+    "expectedBranchName": "THANH NHÀN - HÀ NỘI"
   },
   {
     "channelName": "Be",
     "channelBranchName": "Cà Phê Muối Chú Long - Đội Cấn",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Đội Cấn"
+    "expectedBranchName": "ĐỘI CẤN - HÀ NỘI"
   },
   {
     "channelName": "Be",
@@ -107,32 +107,32 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Long Xuyên",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Long Xuyên"
+    "expectedBranchName": "422 HÀ HOÀNG HỔ"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Bến Tre",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Bến Tre"
+    "expectedBranchName": "ĐẠI LỘ ĐỒNG KHỞI - BẾN TRE"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Long An",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Long An"
+    "expectedBranchName": "88 QL62 - LONG AN"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Bà Rịa",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Bà Rịa"
+    "expectedBranchName": "615 CMT8 - BÀ RỊA"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Mỹ Tho",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Mỹ Tho"
+    "expectedBranchName": "87/2 LÊ THỊ HỒNG GẤM - MỸ THO - TIỀN GIANG"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Kiên Giang",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Kiên Giang"
+    "expectedBranchName": "466 NGUYỄN TRUNG TRỰC - KIÊN GIANG"
   },
   {
     "channelName": "Grab",
@@ -142,17 +142,17 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Củ Chi",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Củ Chi"
+    "expectedBranchName": "143 LIÊU BÌNH HƯƠNG - CỦ CHI"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Biên Hòa",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Biên Hòa"
+    "expectedBranchName": "204 HÀ HUY GIÁP - BH"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Phan Thiết",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Phan Thiết"
+    "expectedBranchName": "32 TRẦN HƯNG ĐẠO - PHAN THIẾT"
   },
   {
     "channelName": "Grab",
@@ -162,17 +162,17 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Cần Thơ",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Cần Thơ"
+    "expectedBranchName": "108 TRẦN HƯNG ĐẠO - CẦN THƠ"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Quảng Ngãi",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Quảng Ngãi"
+    "expectedBranchName": "371 QUANG TRUNG - QUẢNG NGÃI"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Long Thành",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Long Thành"
+    "expectedBranchName": "77/7A KHU VĂN HẢI - LONG THÀNH"
   },
   {
     "channelName": "Grab",
@@ -187,12 +187,12 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Trần Hưng Đạo",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Trần Hưng Đạo"
+    "expectedBranchName": "TRẦN HƯNG ĐẠO - BÌNH DƯƠNG"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Thanh Nhàn",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Thanh Nhàn"
+    "expectedBranchName": "THANH NHÀN - HÀ NỘI"
   },
   {
     "channelName": "Grab",
@@ -202,7 +202,7 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Nguyễn An Ninh",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Nguyễn An Ninh"
+    "expectedBranchName": "NGUYỄN AN NINH - BÌNH DƯƠNG"
   },
   {
     "channelName": "Grab",
@@ -212,7 +212,7 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Đội Cấn",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Đội Cấn"
+    "expectedBranchName": "ĐỘI CẤN - HÀ NỘI"
   },
   {
     "channelName": "Grab",
@@ -222,12 +222,12 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Vũng Tàu",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Vũng Tàu"
+    "expectedBranchName": "HOÀNG HOA THÁM - VŨNG TÀU"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Nguyễn Hữu Cảnh",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Nguyễn Hữu Cảnh"
+    "expectedBranchName": "137A NGUYỄN HỮU CẢNH"
   },
   {
     "channelName": "Grab",
@@ -237,7 +237,7 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Kha Vạn Cân Thủ Đức",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Kha Vạn Cân Thủ Đức"
+    "expectedBranchName": "1200A KHA VẠN CÂN"
   },
   {
     "channelName": "Grab",
@@ -247,12 +247,12 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Nguyễn Huệ",
-    "expectedBranchName": "68 NGUYỄN HUỆ"
+    "expectedBranchName": "66A NGUYỄN HUỆ"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Đoàn Thị Điểm",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Đoàn Thị Điểm"
+    "expectedBranchName": "ĐOÀN THỊ ĐIỂM - HUẾ"
   },
   {
     "channelName": "Grab",
@@ -272,7 +272,7 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Tây Ninh",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Tây Ninh"
+    "expectedBranchName": "601 CMT8 TÂY NINH"
   },
   {
     "channelName": "Grab",
@@ -282,7 +282,7 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Cà Mau",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Cà Mau"
+    "expectedBranchName": "BÙI THỊ TRƯỜNG - CÀ MAU"
   },
   {
     "channelName": "Grab",
@@ -292,7 +292,7 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Bình Dương",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Bình Dương"
+    "expectedBranchName": "NGUYỄN AN NINH - BÌNH DƯƠNG"
   },
   {
     "channelName": "Grab",
@@ -327,7 +327,7 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Hồ Con Rùa",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Hồ Con Rùa"
+    "expectedBranchName": "6B CÔNG TRƯỜNG DÂN CHỦ"
   },
   {
     "channelName": "Grab",
@@ -342,12 +342,12 @@
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - CMT8",
-    "expectedBranchName": "1349 CMT8"
+    "expectedBranchName": "601 CMT8 TÂY NINH"
   },
   {
     "channelName": "Grab",
     "channelBranchName": "Cà Phê Muối Chú Long - Phạm Văn Đồng Tây Ninh",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Phạm Văn Đồng Tây Ninh"
+    "expectedBranchName": "PHẠM VĂN ĐỒNG - TÂY NINH"
   },
   {
     "channelName": "Grab",
@@ -372,27 +372,27 @@
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Công Trường Quốc Tế",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Công Trường Quốc Tế"
+    "expectedBranchName": "6B CÔNG TRƯỜNG DÂN CHỦ"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Thanh Nhàn",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Thanh Nhàn"
+    "expectedBranchName": "THANH NHÀN - HÀ NỘI"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Đội Cấn",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Đội Cấn"
+    "expectedBranchName": "ĐỘI CẤN - HÀ NỘI"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Đồng Xoài",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Đồng Xoài"
+    "expectedBranchName": "884 PHÚ RIÊNG ĐỎ - BP"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Cần Thơ",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Cần Thơ"
+    "expectedBranchName": "108 TRẦN HƯNG ĐẠO - CẦN THƠ"
   },
   {
     "channelName": "Shopee",
@@ -417,12 +417,12 @@
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Quảng Ngãi",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Quảng Ngãi"
+    "expectedBranchName": "371 QUANG TRUNG - QUẢNG NGÃI"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Kiên Giang",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Kiên Giang"
+    "expectedBranchName": "466 NGUYỄN TRUNG TRỰC - KIÊN GIANG"
   },
   {
     "channelName": "Shopee",
@@ -437,27 +437,27 @@
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Vũng Tàu",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Vũng Tàu"
+    "expectedBranchName": "HOÀNG HOA THÁM - VŨNG TÀU"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Bà Rịa",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Bà Rịa"
+    "expectedBranchName": "615 CMT8 - BÀ RỊA"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Long Xuyên",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Long Xuyên"
+    "expectedBranchName": "422 HÀ HOÀNG HỔ"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Nguyễn Huệ",
-    "expectedBranchName": "68 NGUYỄN HUỆ"
+    "expectedBranchName": "66A NGUYỄN HUỆ"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Cà Mau",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Cà Mau"
+    "expectedBranchName": "BÙI THỊ TRƯỜNG - CÀ MAU"
   },
   {
     "channelName": "Shopee",
@@ -482,7 +482,7 @@
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Tân Hoà Đông",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Tân Hoà Đông"
+    "expectedBranchName": "307 ĐẶNG NGUYÊN CẨN"
   },
   {
     "channelName": "Shopee",
@@ -497,17 +497,17 @@
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Phan Thiết",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Phan Thiết"
+    "expectedBranchName": "32 TRẦN HƯNG ĐẠO - PHAN THIẾT"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Cách Mạng Tháng 8",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Cách Mạng Tháng 8"
+    "expectedBranchName": "194 CÁCH MẠNG THÁNG TÁM"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - 1349 Cách Mạng Tháng 8",
-    "expectedBranchName": "Cà Phê Muối Chú Long - 1349 Cách Mạng Tháng 8"
+    "expectedBranchName": "1349 CMT8"
   },
   {
     "channelName": "Shopee",
@@ -522,32 +522,32 @@
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Kha Vạn Cân",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Kha Vạn Cân"
+    "expectedBranchName": "1200A KHA VẠN CÂN"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Tây Ninh",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Tây Ninh"
+    "expectedBranchName": "601 CMT8 TÂY NINH"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Vĩnh Long",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Vĩnh Long"
+    "expectedBranchName": "25 TRƯNG NỮ VƯƠNG - VL"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Đoàn Thị Điểm",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Đoàn Thị Điểm"
+    "expectedBranchName": "ĐOÀN THỊ ĐIỂM - HUẾ"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Long An",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Long An"
+    "expectedBranchName": "88 QL62 - LONG AN"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Tiền Giang",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Tiền Giang"
+    "expectedBranchName": "87/2 LÊ THỊ HỒNG GẤM - MỸ THO - TIỀN GIANG"
   },
   {
     "channelName": "Shopee",
@@ -582,7 +582,7 @@
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Trần Hưng Đạo",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Trần Hưng Đạo"
+    "expectedBranchName": "TRẦN HƯNG ĐẠO - BÌNH DƯƠNG"
   },
   {
     "channelName": "Shopee",
@@ -592,7 +592,7 @@
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Bến Tre",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Bến Tre"
+    "expectedBranchName": "ĐẠI LỘ ĐỒNG KHỞI - BẾN TRE"
   },
   {
     "channelName": "Shopee",
@@ -602,12 +602,12 @@
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Nguyễn Hữu Cảnh",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Nguyễn Hữu Cảnh"
+    "expectedBranchName": "137A NGUYỄN HỮU CẢNH"
   },
   {
     "channelName": "Shopee",
     "channelBranchName": "Cà Phê Muối Chú Long - Hà Huy Giáp",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Hà Huy Giáp"
+    "expectedBranchName": "204 HÀ HUY GIÁP - BH"
   },
   {
     "channelName": "Momo",
@@ -837,7 +837,7 @@
   {
     "channelName": "Momo",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - 87 HOÀNG HOA THÁM - VŨNG TÀU",
-    "expectedBranchName": "87 HOÀNG HOA THÁM - VŨNG TÀU"
+    "expectedBranchName": "HOÀNG HOA THÁM - VŨNG TÀU"
   },
   {
     "channelName": "Momo",
@@ -852,7 +852,7 @@
   {
     "channelName": "Momo",
     "channelBranchName": "Cà Phê Muối Chú Long - Hùng Vương - Huế",
-    "expectedBranchName": "HÙNG VƯƠNG"
+    "expectedBranchName": "HÙNG VƯƠNG - HUẾ"
   },
   {
     "channelName": "Momo",
@@ -912,7 +912,7 @@
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Tân An",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Tân An"
+    "expectedBranchName": "HUỲNH TẤN PHÁT"
   },
   {
     "channelName": "ZaloPay",
@@ -922,7 +922,7 @@
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Đội Cấn",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Đội Cấn"
+    "expectedBranchName": "ĐỘI CẤN - HÀ NỘI"
   },
   {
     "channelName": "ZaloPay",
@@ -937,7 +937,7 @@
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Củ Chi",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Củ Chi"
+    "expectedBranchName": "143 LIÊU BÌNH HƯƠNG - CỦ CHI"
   },
   {
     "channelName": "ZaloPay",
@@ -952,12 +952,12 @@
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Quang Tru",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Quang Tru"
+    "expectedBranchName": "371 QUANG TRUNG - QUẢNG NGÃI"
   },
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Rạch Giá",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Rạch Giá"
+    "expectedBranchName": "466 NGUYỄN TRUNG TRỰC - KIÊN GIANG"
   },
   {
     "channelName": "ZaloPay",
@@ -967,32 +967,32 @@
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Phan Thiết",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Phan Thiết"
+    "expectedBranchName": "32 TRẦN HƯNG ĐẠO - PHAN THIẾT"
   },
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Long Xuyên",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Long Xuyên"
+    "expectedBranchName": "422 HÀ HOÀNG HỔ"
   },
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Vĩnh Long",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Vĩnh Long"
+    "expectedBranchName": "25 TRƯNG NỮ VƯƠNG - VL"
   },
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - P.V.Đồng",
-    "expectedBranchName": "Cà Phê Muối Chú Long - P.V.Đồng"
+    "expectedBranchName": "PHẠM VĂN ĐỒNG - TÂY NINH"
   },
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - N.V.Cừ PQ",
-    "expectedBranchName": "Cà Phê Muối Chú Long - N.V.Cừ PQ"
+    "expectedBranchName": "NGUYỄN VĂN CỪ PHÚ QUỐC"
   },
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Cần Thơ",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Cần Thơ"
+    "expectedBranchName": "108 TRẦN HƯNG ĐẠO - CẦN THƠ"
   },
   {
     "channelName": "ZaloPay",
@@ -1002,12 +1002,12 @@
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Long Thành",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Long Thành"
+    "expectedBranchName": "77/7A KHU VĂN HẢI - LONG THÀNH"
   },
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Cà Mau",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Cà Mau"
+    "expectedBranchName": "BÙI THỊ TRƯỜNG - CÀ MAU"
   },
   {
     "channelName": "ZaloPay",
@@ -1017,7 +1017,7 @@
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Bà Rịa",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Bà Rịa"
+    "expectedBranchName": "615 CMT8 - BÀ RỊA"
   },
   {
     "channelName": "ZaloPay",
@@ -1032,12 +1032,12 @@
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Kha Vạn Cân",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Kha Vạn Cân"
+    "expectedBranchName": "1200A KHA VẠN CÂN"
   },
   {
     "channelName": "ZaloPay",
     "channelBranchName": "Cà Phê Muối Chú Long - Quãng Ngãi",
-    "expectedBranchName": "Cà Phê Muối Chú Long - Quãng Ngãi"
+    "expectedBranchName": "371 QUANG TRUNG - QUẢNG NGÃI"
   },
   {
     "channelName": "ZaloPay",
@@ -1050,88 +1050,148 @@
     "expectedBranchName": "161 NGÔ TẤT TỐ"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - VŨNG TÀU 102 HOÀNG HOA THÁM",
-    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG - VŨNG TÀU 102 HOÀNG HOA THÁM"
+    "expectedBranchName": "HOÀNG HOA THÁM - VŨNG TÀU"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - TỈNH LỘ 8 CỦ CHI",
     "expectedBranchName": "TỈNH LỘ 8 CỦ CHI"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - BÀ RỊA 615 CÁCH MẠNG THÁNG 8",
-    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG - BÀ RỊA 615 CÁCH MẠNG THÁNG 8"
+    "expectedBranchName": "615 CMT8 - BÀ RỊA"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - KHA VẠN CÂN 1200A KHA VẠN CÂN",
     "expectedBranchName": "1200A KHA VẠN CÂN"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG 1/97 KHU PHỐ HÒA LÂN 2",
-    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG 1/97 KHU PHỐ HÒA LÂN 2"
+    "expectedBranchName": "THUẬN AN"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - HOÀNG DIỆU 496 HOÀNG DIỆU",
     "expectedBranchName": "496 HOÀNG DIỆU"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  HUNG VƯƠNG, HUẾ",
     "expectedBranchName": "HÙNG VƯƠNG"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - LONG XUYÊN 422 HÀ HOÀNG HỔ",
     "expectedBranchName": "422 HÀ HOÀNG HỔ"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  BÌNH LONG",
     "expectedBranchName": "07 BÌNH LONG"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - CLASSIC 404 LÊ VĂN LƯƠNG",
     "expectedBranchName": "CLASSIC"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - LÊ VĂN SỸ 120 LÊ VĂN SỸ",
-    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG - LÊ VĂN SỸ 120 LÊ VĂN SỸ"
+    "expectedBranchName": "120 LÊ VĂN SỸ"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - HUỲNH TẤN PHÁT 1568 HUỲNH TẤN PHÁT",
     "expectedBranchName": "HUỲNH TẤN PHÁT"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - TRẢNG BOM 2161 QUỐC LỘ 1A, QUẢNG LỘC",
     "expectedBranchName": "TRẢNG BOM"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - TRƯƠNG ĐỊNH 330 TRƯƠNG ĐỊNH",
     "expectedBranchName": "330 TRƯƠNG ĐỊNH"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  NGUYỄN TRUNG TRỰC - PHÚ QUỐC",
-    "expectedBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  NGUYỄN TRUNG TRỰC - PHÚ QUỐC"
+    "expectedBranchName": "NGUYỄN TRUNG TRỰC PHÚ QUỐC"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - NGUYỄN HỮU CẢNH 137A NGUYỄN HỮU CẢNH",
     "expectedBranchName": "137A NGUYỄN HỮU CẢNH"
   },
   {
-    "channelName": "VNPay",
+    "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG -  VÕ VĂN KIỆT",
     "expectedBranchName": "VÕ VĂN KIỆT"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Tôn Đức Thắng",
+    "expectedBranchName": "17 TÔN ĐỨC THẮNG"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Thanh Nhàn",
+    "expectedBranchName": "THANH NHÀN - HÀ NỘI"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Trương Định",
+    "expectedBranchName": "330 TRƯƠNG ĐỊNH"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Đội Cấn",
+    "expectedBranchName": "ĐỘI CẤN - HÀ NỘI"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Hoàng Diệu",
+    "expectedBranchName": "496 HOÀNG DIỆU"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Đường Láng",
+    "expectedBranchName": "ĐƯỜNG LÁNG"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Quang Trung Gò Vấp",
+    "expectedBranchName": "Quang Trung Gò Vấp"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Võ Văn Kiệt",
+    "expectedBranchName": "VÕ VĂN KIỆT"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Classic Lê Văn Lương",
+    "expectedBranchName": "CLASSIC"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Lê Duẩn",
+    "expectedBranchName": "472 LÊ DUẪN"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Huỳnh Tấn Phát",
+    "expectedBranchName": "HUỲNH TẤN PHÁT"
+  },
+  {
+    "channelName": "XanhSM",
+    "channelBranchName": "Cà Phê Muối Chú Long - Kha Vạn Cân",
+    "expectedBranchName": "1200A KHA VẠN CÂN"
   }
 ]

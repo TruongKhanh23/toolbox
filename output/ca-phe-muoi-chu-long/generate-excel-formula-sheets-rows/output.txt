@@ -1,20 +1,16 @@
 =IF(
-    ROWS($A$2:A2) <= ((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;"")));
-    IF(INDEX(Be_Ca_Transfer!$A$2:$AE$100; ROWS($A$2:A2); COLUMN()-COLUMN($A$2)+1)=""; ""; INDEX(Be_Ca_Transfer!$A$2:$AE$100; ROWS($A$2:A2); COLUMN()-COLUMN($A$2)+1));
+    ROWS($A$2:A2) <= (COUNTIF(13_09!$A$2:$A$100;"<>"));
+    IF(INDEX(13_09!$A$2:$P$100; ROWS($A$2:A2); COLUMN()-COLUMN($A$2)+1)=""; ""; INDEX(13_09!$A$2:$P$100; ROWS($A$2:A2); COLUMN()-COLUMN($A$2)+1));
     IF(
-        ROWS($A$2:A2) <= ((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))+(COUNTA(Be_Duong_Transfer!$A$2:$A$100)-COUNTIF(Be_Duong_Transfer!$A$2:$A$100;"")));
-        IF(INDEX(Be_Duong_Transfer!$A$2:$AE$100; ROWS($A$2:A2)-((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))); COLUMN()-COLUMN($A$2)+1)=""; ""; INDEX(Be_Duong_Transfer!$A$2:$AE$100; ROWS($A$2:A2)-((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))); COLUMN()-COLUMN($A$2)+1));
+        ROWS($A$2:A2) <= (COUNTIF(13_09!$A$2:$A$100;"<>")+COUNTIF(14_09!$A$2:$A$100;"<>"));
+        IF(INDEX(14_09!$A$2:$P$100; ROWS($A$2:A2)-(COUNTIF(13_09!$A$2:$A$100;"<>")); COLUMN()-COLUMN($A$2)+1)=""; ""; INDEX(14_09!$A$2:$P$100; ROWS($A$2:A2)-(COUNTIF(13_09!$A$2:$A$100;"<>")); COLUMN()-COLUMN($A$2)+1));
         IF(
-            ROWS($A$2:A2) <= ((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))+(COUNTA(Be_Duong_Transfer!$A$2:$A$100)-COUNTIF(Be_Duong_Transfer!$A$2:$A$100;""))+(COUNTA(Grab_Transfer!$A$2:$A$100)-COUNTIF(Grab_Transfer!$A$2:$A$100;"")));
-            IF(INDEX(Grab_Transfer!$A$2:$AE$100; ROWS($A$2:A2)-((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))+(COUNTA(Be_Duong_Transfer!$A$2:$A$100)-COUNTIF(Be_Duong_Transfer!$A$2:$A$100;""))); COLUMN()-COLUMN($A$2)+1)=""; ""; INDEX(Grab_Transfer!$A$2:$AE$100; ROWS($A$2:A2)-((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))+(COUNTA(Be_Duong_Transfer!$A$2:$A$100)-COUNTIF(Be_Duong_Transfer!$A$2:$A$100;""))); COLUMN()-COLUMN($A$2)+1));
+            ROWS($A$2:A2) <= (COUNTIF(13_09!$A$2:$A$100;"<>")+COUNTIF(14_09!$A$2:$A$100;"<>")+COUNTIF(15_09!$A$2:$A$100;"<>"));
+            IF(INDEX(15_09!$A$2:$P$100; ROWS($A$2:A2)-(COUNTIF(13_09!$A$2:$A$100;"<>")+COUNTIF(14_09!$A$2:$A$100;"<>")); COLUMN()-COLUMN($A$2)+1)=""; ""; INDEX(15_09!$A$2:$P$100; ROWS($A$2:A2)-(COUNTIF(13_09!$A$2:$A$100;"<>")+COUNTIF(14_09!$A$2:$A$100;"<>")); COLUMN()-COLUMN($A$2)+1));
             IF(
-                ROWS($A$2:A2) <= ((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))+(COUNTA(Be_Duong_Transfer!$A$2:$A$100)-COUNTIF(Be_Duong_Transfer!$A$2:$A$100;""))+(COUNTA(Grab_Transfer!$A$2:$A$100)-COUNTIF(Grab_Transfer!$A$2:$A$100;""))+(COUNTA(VNPAY_Transfer!$A$2:$A$100)-COUNTIF(VNPAY_Transfer!$A$2:$A$100;"")));
-                IF(INDEX(VNPAY_Transfer!$A$2:$AE$100; ROWS($A$2:A2)-((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))+(COUNTA(Be_Duong_Transfer!$A$2:$A$100)-COUNTIF(Be_Duong_Transfer!$A$2:$A$100;""))+(COUNTA(Grab_Transfer!$A$2:$A$100)-COUNTIF(Grab_Transfer!$A$2:$A$100;""))); COLUMN()-COLUMN($A$2)+1)=""; ""; INDEX(VNPAY_Transfer!$A$2:$AE$100; ROWS($A$2:A2)-((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))+(COUNTA(Be_Duong_Transfer!$A$2:$A$100)-COUNTIF(Be_Duong_Transfer!$A$2:$A$100;""))+(COUNTA(Grab_Transfer!$A$2:$A$100)-COUNTIF(Grab_Transfer!$A$2:$A$100;""))); COLUMN()-COLUMN($A$2)+1));
-                IF(
-                    ROWS($A$2:A2) <= ((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))+(COUNTA(Be_Duong_Transfer!$A$2:$A$100)-COUNTIF(Be_Duong_Transfer!$A$2:$A$100;""))+(COUNTA(Grab_Transfer!$A$2:$A$100)-COUNTIF(Grab_Transfer!$A$2:$A$100;""))+(COUNTA(VNPAY_Transfer!$A$2:$A$100)-COUNTIF(VNPAY_Transfer!$A$2:$A$100;""))+(COUNTA(ZaloPay_GG_Transfer!$A$2:$A$100)-COUNTIF(ZaloPay_GG_Transfer!$A$2:$A$100;"")));
-                    IF(INDEX(ZaloPay_GG_Transfer!$A$2:$AE$100; ROWS($A$2:A2)-((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))+(COUNTA(Be_Duong_Transfer!$A$2:$A$100)-COUNTIF(Be_Duong_Transfer!$A$2:$A$100;""))+(COUNTA(Grab_Transfer!$A$2:$A$100)-COUNTIF(Grab_Transfer!$A$2:$A$100;""))+(COUNTA(VNPAY_Transfer!$A$2:$A$100)-COUNTIF(VNPAY_Transfer!$A$2:$A$100;""))); COLUMN()-COLUMN($A$2)+1)=""; ""; INDEX(ZaloPay_GG_Transfer!$A$2:$AE$100; ROWS($A$2:A2)-((COUNTA(Be_Ca_Transfer!$A$2:$A$100)-COUNTIF(Be_Ca_Transfer!$A$2:$A$100;""))+(COUNTA(Be_Duong_Transfer!$A$2:$A$100)-COUNTIF(Be_Duong_Transfer!$A$2:$A$100;""))+(COUNTA(Grab_Transfer!$A$2:$A$100)-COUNTIF(Grab_Transfer!$A$2:$A$100;""))+(COUNTA(VNPAY_Transfer!$A$2:$A$100)-COUNTIF(VNPAY_Transfer!$A$2:$A$100;""))); COLUMN()-COLUMN($A$2)+1));
-                    ""
-                )
+                ROWS($A$2:A2) <= (COUNTIF(13_09!$A$2:$A$100;"<>")+COUNTIF(14_09!$A$2:$A$100;"<>")+COUNTIF(15_09!$A$2:$A$100;"<>")+COUNTIF(16_09!$A$2:$A$100;"<>"));
+                IF(INDEX(16_09!$A$2:$P$100; ROWS($A$2:A2)-(COUNTIF(13_09!$A$2:$A$100;"<>")+COUNTIF(14_09!$A$2:$A$100;"<>")+COUNTIF(15_09!$A$2:$A$100;"<>")); COLUMN()-COLUMN($A$2)+1)=""; ""; INDEX(16_09!$A$2:$P$100; ROWS($A$2:A2)-(COUNTIF(13_09!$A$2:$A$100;"<>")+COUNTIF(14_09!$A$2:$A$100;"<>")+COUNTIF(15_09!$A$2:$A$100;"<>")); COLUMN()-COLUMN($A$2)+1));
+                ""
             )
         )
     )
