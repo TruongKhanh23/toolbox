@@ -8,13 +8,20 @@ import path from "path";
  * sheets: array of sheet names (["Be_Ca_Transfer", "Be_Duong_Transfer", ...])
  */
 export default function generateExcelFormulaSheetsRows() {
-  const sheets = ["13_09", "14_09", "15_09", "16_09"];
+  const sheets = [
+    "Be_Ca_Transfer",
+    "Be_Duong_Transfer",
+    "Grab_Transfer",
+    "VNPAY_Transfer",
+    "ZaloPay_GG_Transfer",
+    "XanhSM_Transfer",
+  ];
   const rowRef = "ROWS($A$2:A2)";
   const colRef = "COLUMN()-COLUMN($A$2)+1";
   const INDENT = "    ";
 
   function countExpr(sheet) {
-    return `COUNTIF(${sheet}!$A$2:$A$100;"<>")`;
+    return `(COUNTA(${sheet}!$A$2:$A$100)-COUNTIF(${sheet}!$A$2:$A$100;""))`;
   }
 
   // Nếu không có sheets, trả về chuỗi rỗng hợp lệ
@@ -48,7 +55,7 @@ export default function generateExcelFormulaSheetsRows() {
 
   function indexExprFor(i) {
     const sheet = sheets[i];
-    return `INDEX(${sheet}!$A$2:$P$100; ${rowIndexFor(i)}; ${colRef})`;
+    return `INDEX(${sheet}!$A$2:$AE$100; ${rowIndexFor(i)}; ${colRef})`;
   }
 
   // Xây chuỗi IF lồng nhau cho phần ELSE (bắt đầu từ startIndex)
