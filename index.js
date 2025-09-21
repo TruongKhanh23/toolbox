@@ -1,3 +1,6 @@
+import fs from "fs";
+import path from "path";
+
 import findBranchName from "./tools/ca-phe-muoi-chu-long/find-branch-name.js";
 import generateExcelFormulaSheetsRows from "./tools/ca-phe-muoi-chu-long/generate-excel-formula-sheets-rows.js";
 
@@ -7,9 +10,19 @@ const functions = {
   2: generateExcelFormulaSheetsRows,
 };
 
-// --- Gán số trực tiếp ở đây ---
-const arg = 2; // 👉 đổi thành 1 hoặc 2 để chạy hàm tương ứng
+// --- Đọc số từ file arg.txt (đặt cùng cấp index.js) ---
+const filePath = path.resolve("./run-function-number.txt");
 
+let arg;
+try {
+  const fileContent = fs.readFileSync(filePath, "utf-8").trim();
+  arg = parseInt(fileContent, 10);
+} catch (err) {
+  console.error("Không đọc được file arg.txt:", err.message);
+  process.exit(1);
+}
+
+// --- Chạy function ---
 const fn = functions[arg];
 
 if (fn) {
