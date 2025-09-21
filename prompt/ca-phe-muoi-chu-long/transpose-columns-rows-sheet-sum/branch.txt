@@ -1,23 +1,25 @@
- Nếu I2 có dữ liệu, thì: 
+Nếu I2 có dữ liệu, thì: 
 
-- Lấy giá trị từ cột A của bảng VNPAY_Sum (ứng với nhóm dòng hiện tại). 
+- Lấy giá trị từ cột A của bảng ZaloPay_PhiDichVu_Sum (ứng với nhóm dòng hiện tại). 
 - Sang bảng Master, tìm dòng đầu tiên thỏa mãn: 
 
-R = giá trị vừa lấy từ VNPAY_Sum!A 
-và Q = "VNPAY". 
+AG = giá trị vừa lấy từ ZaloPay_PhiDichVu_Sum!A 
+và AH = "ZaloPay_PhiDichVu". 
 
-Sau đó trả về giá trị từ cột S tại dòng đó. 
+Sau đó trả về giá trị từ cột AH tại dòng đó. 
 
 Nếu không có dữ liệu trong I2 → trả về rỗng. 
 
 Lưu ý 
 ROW() = số hàng hiện tại trong sheet công thức. 
 
-Xử lý theo nhóm 2 dòng (vì dữ liệu gốc ở VNPAY_Sum có 2 cột được trải dọc). 
+Xử lý theo nhóm 1 dòng (vì dữ liệu gốc ở ZaloPay_PhiDichVu_Sum có 1 cột được trải dọc). 
 
-INT(...)+1 → xác định hàng trong bảng VNPAY_Sum. 
+INT(...)+1 → xác định hàng trong bảng ZaloPay_PhiDichVu_Sum. 
 
-INDEX(VNPAY_Sum!A$2:A$100; ...) → lấy giá trị từ cột A của VNPAY_Sum (ví dụ ID hay mã tham chiếu).
+INDEX(ZaloPay_PhiDichVu_Sum!A$2:A$100; ...) → lấy giá trị từ cột A của ZaloPay_PhiDichVu_Sum (ví dụ ID hay mã tham chiếu).
+
+Dùng dấu chấm phẩy ; thay vì dấu phẩy
 
 =IF(I2<>"";
     INDEX(Master!AH:AH;
