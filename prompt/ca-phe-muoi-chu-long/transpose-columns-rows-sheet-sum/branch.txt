@@ -1,6 +1,6 @@
  Nếu I2 có dữ liệu, thì: 
 
-- Lấy giá trị từ cột A của bảng VNPAY (ứng với nhóm dòng hiện tại). 
+- Lấy giá trị từ cột A của bảng VNPAY_Sum (ứng với nhóm dòng hiện tại). 
 - Sang bảng Master, tìm dòng đầu tiên thỏa mãn: 
 
 R = giá trị vừa lấy từ VNPAY_Sum!A 
@@ -20,9 +20,9 @@ INT(...)+1 → xác định hàng trong bảng VNPAY_Sum.
 INDEX(VNPAY_Sum!A$2:A$100; ...) → lấy giá trị từ cột A của VNPAY_Sum (ví dụ ID hay mã tham chiếu).
 
 =IF(I2<>"";
-    INDEX(Master!S:S;
+    INDEX(Master!AH:AH;
         MATCH(1;
-            (Master!R:R=INDEX(VNPAY_Sum!A$2:A$100; INT((ROW()-2)/2)+1)) * (Master!Q:Q="VNPAY");
+            (Master!AG:AG = INDEX(XanhSM_Sum!A$2:A$100; INT((ROW()-2)/5)+1)) * (Master!AF:AF="XanhSM");
         0)
     );
 "")
