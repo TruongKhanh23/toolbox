@@ -93,6 +93,10 @@ function findExpectedName(appName, expectedList) {
 export default function findBranchName() {
   const exceptionExpectedNames = [
     {
+      branchNameByChannel: "Cà Phê Muối Chú Long - Thanh Nhà",
+      expectedName: "THANH NHÀN - HÀ NỘI",
+    },
+    {
       branchNameByChannel: "Cà Phê Muối Chú Long - Quang Trung Gò Vấp",
       expectedName: "Quang Trung Gò Vấp",
     },

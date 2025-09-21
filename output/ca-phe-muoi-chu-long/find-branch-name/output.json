@@ -1050,6 +1050,11 @@
     "expectedBranchName": "161 NGÔ TẤT TỐ"
   },
   {
+    "channelName": "ZaloPay",
+    "channelBranchName": "Cà Phê Muối Chú Long - Thanh Nhà",
+    "expectedBranchName": "THANH NHÀN - HÀ NỘI"
+  },
+  {
     "channelName": "VNPAY",
     "channelBranchName": "CÀ PHÊ MUỐI CHÚ LONG - VŨNG TÀU 102 HOÀNG HOA THÁM",
     "expectedBranchName": "HOÀNG HOA THÁM - VŨNG TÀU"

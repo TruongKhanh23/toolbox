@@ -390,6 +390,7 @@ export const branchNameByChannel = [
     channelName: "ZaloPay",
     branchName: "Cà Phê Muối Chú Long - 161 Ngô Tất Tố",
   },
+  { channelName: "ZaloPay", branchName: "Cà Phê Muối Chú Long - Thanh Nhà" },
   {
     channelName: "VNPAY",
     branchName: "CÀ PHÊ MUỐI CHÚ LONG - VŨNG TÀU 102 HOÀNG HOA THÁM",
