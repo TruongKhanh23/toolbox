@@ -1,0 +1,18 @@
+Tôi có một bảng dữ liệu ở XanhSM_Sum!B2:F100 gồm 2 cột.
+
+Tôi muốn tạo một công thức trong một cột mới để:
+
+Trải phẳng dữ liệu của 5 cột đó thành 1 cột duy nhất (mỗi dòng dữ liệu ở XanhSM_Sum sẽ trải thành 5 dòng liên tiếp).
+
+Dòng thứ nhất lấy cột B, dòng thứ hai lấy cột C, rồi lại lặp tiếp cho dòng tiếp theo.
+
+Nếu ô nguồn rỗng thì trả về rỗng.
+
+Nếu có số âm thì chuyển thành số dương (giá trị tuyệt đối).
+
+Công thức phải viết bằng dấu chấm phẩy ; thay vì dấu phẩy.
+
+Công thức phải đặt được ở dòng 2 và có thể kéo xuống
+
+Tham khảo công thức
+=IF(INDEX(VNPAY_Sum!B$2:C$100; INT((ROW()-2)/2)+1; MOD(ROW()-2;2)+1)=""; ""; ABS(INDEX(VNPAY_Sum!B$2:C$100; INT((ROW()-2)/2)+1; MOD(ROW()-2;2)+1)))

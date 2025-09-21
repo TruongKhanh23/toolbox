@@ -1,0 +1,28 @@
+ Nếu I2 có dữ liệu, thì: 
+
+- Lấy giá trị từ cột A của bảng VNPAY (ứng với nhóm dòng hiện tại). 
+- Sang bảng Master, tìm dòng đầu tiên thỏa mãn: 
+
+R = giá trị vừa lấy từ VNPAY_Sum!A 
+và Q = "VNPAY". 
+
+Sau đó trả về giá trị từ cột S tại dòng đó. 
+
+Nếu không có dữ liệu trong I2 → trả về rỗng. 
+
+Lưu ý 
+ROW() = số hàng hiện tại trong sheet công thức. 
+
+Xử lý theo nhóm 2 dòng (vì dữ liệu gốc ở VNPAY_Sum có 2 cột được trải dọc). 
+
+INT(...)+1 → xác định hàng trong bảng VNPAY_Sum. 
+
+INDEX(VNPAY_Sum!A$2:A$100; ...) → lấy giá trị từ cột A của VNPAY_Sum (ví dụ ID hay mã tham chiếu).
+
+=IF(I2<>"";
+    INDEX(Master!S:S;
+        MATCH(1;
+            (Master!R:R=INDEX(VNPAY_Sum!A$2:A$100; INT((ROW()-2)/2)+1)) * (Master!Q:Q="VNPAY");
+        0)
+    );
+"")

@@ -1,0 +1,21 @@
+Tôi muốn viết một công thức Excel để:
+
+Nếu ô I2 trống thì trả về trống.
+
+Nếu ô I2 có dữ liệu thì trả về nhãn theo thứ tự luân phiên 2 dòng một:
+
+Dòng 1: "Khuyến mãi từ quán XanhSM"
+Dòng 2: "Giảm giá món XanhSM"
+Dòng 3: "Chiết khấu XanhSM"
+Dòng 4: "VAT XanhSM"
+Dòng 5: "PIT XanhSM"
+
+Sau đó lại lặp lại cho các dòng kế tiếp.
+
+Công thức phải đặt được từ dòng 2 và kéo xuống.
+
+Dùng dấu chấm phẩy ; thay vì dấu phẩy
+
+Tham khảo công thức này
+
+=IF(I2=""; ""; CHOOSE(MOD(ROW()-2;2)+1;"Số tiền khuyến mãi VNPAY";"Phí rút tiền VNPAY"))
