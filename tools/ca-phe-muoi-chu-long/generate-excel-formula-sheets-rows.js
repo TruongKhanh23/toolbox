@@ -14,6 +14,7 @@ export default function generateExcelFormulaSheetsRows() {
     "Grab_Transfer",
     "VNPAY_Transfer",
     "ZaloPay_GG_Transfer",
+    "ZaloPay_Transfer",
     "XanhSM_Transfer",
   ];
   const rowRef = "ROWS($A$2:A2)";
