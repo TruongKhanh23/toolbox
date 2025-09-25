@@ -14,27 +14,32 @@ export default function generateKeyFromMultipleColumns() {
       return;
     }
 
-    const columns = [];
-    const askColumn = (i) => {
-      if (i >= numCols) {
-        rl.question("Nhập dòng bắt đầu (ví dụ 6): ", (rowInput) => {
-          const row = rowInput.trim();
-          // Tạo công thức Excel TEXTJOIN
-          const formulaParts = columns.map(col => `${col}${row}`);
-          const formula = `=IF(COUNTA(${formulaParts.join(";")})=0;"";TEXTJOIN("-";TRUE;${formulaParts.join(";")}))`;
-          console.log("Công thức Excel tạo ra:");
-          console.log(formula);
-          rl.close();
+    rl.question("Nhập ký tự/dấu để nối (ví dụ: -, khoảng trắng, _...): ", (delimiterInput) => {
+      // Nếu user chỉ nhấn Enter, default là "-"
+      const delimiter = delimiterInput === "" ? "-" : delimiterInput;
+
+      const columns = [];
+      const askColumn = (i) => {
+        if (i >= numCols) {
+          rl.question("Nhập dòng bắt đầu (ví dụ 6): ", (rowInput) => {
+            const row = rowInput.trim();
+            // Tạo công thức Excel TEXTJOIN
+            const formulaParts = columns.map(col => `${col}${row}`);
+            const formula = `=IF(COUNTA(${formulaParts.join(";")})=0;"";TEXTJOIN("${delimiter}";TRUE;${formulaParts.join(";")}))`;
+            console.log("Công thức Excel tạo ra:");
+            console.log(formula);
+            rl.close();
+          });
+          return;
+        }
+
+        rl.question(`Nhập tên cột thứ ${i + 1} (ví dụ AD): `, (col) => {
+          columns.push(col.trim().toUpperCase());
+          askColumn(i + 1);
         });
-        return;
-      }
+      };
 
-      rl.question(`Nhập tên cột thứ ${i + 1} (ví dụ AD): `, (col) => {
-        columns.push(col.trim().toUpperCase());
-        askColumn(i + 1);
-      });
-    };
-
-    askColumn(0);
+      askColumn(0);
+    });
   });
 }
