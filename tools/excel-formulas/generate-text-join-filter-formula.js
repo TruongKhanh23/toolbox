@@ -8,33 +8,38 @@ export default function generateTextJoinFilterFormula() {
 
   const questions = [
     { key: "SourceSheet", question: "Tên sheet dữ liệu: " },
-    { key: "DataColumnRef", question: "Cột chứa giá trị cần lấy (vd: C:C): " },
-    { key: "CriteriaColumn1Ref", question: "Cột điều kiện 1 (vd: A:A): " },
+    { key: "DataColumnRef", question: "Cột chứa giá trị cần lấy (vd: C): " },
+    { key: "CriteriaColumn1Ref", question: "Cột điều kiện 1 (vd: A): " },
     { key: "CriteriaValue1", question: "Giá trị lọc theo cột 1 (vd: C2): " },
-    { key: "CriteriaColumn2Ref", question: "Cột điều kiện 2 (vd: B:B): " },
-    { key: "CriteriaValue2", question: "Giá trị lọc theo cột 2 (vd: \"Programming_Language\"): " },
-    { key: "DefaultValue", question: "Giá trị trả về nếu không tìm thấy (vd: \"N/A\"): " },
+    { key: "CriteriaColumn2Ref", question: "Cột điều kiện 2 (vd: B): " },
+    { key: "CriteriaValue2", question: "Giá trị lọc theo cột 2 (vd: Programming_Language): " },
     { key: "Delimiter", question: "Ký tự phân cách khi nối chuỗi (vd: \", \"): " },
   ];
 
   const answers = {};
 
   function quoteIfString(value) {
-    // Nếu chưa có dấu " ở đầu cuối thì thêm
     if (!/^".*"$/.test(value) && isNaN(value)) {
-      return `"${value}" `;
+      return `"${value}"`;
     }
     return value;
   }
 
+  function toRange(col) {
+    return `$${col.toUpperCase()}$2:$${col.toUpperCase()}$5000`;
+  }
+
   function ask(index) {
     if (index === questions.length) {
-      // Chuẩn hóa chữ hoa cột
-      const dataCol = answers.DataColumnRef.toUpperCase();
-      const critCol1 = answers.CriteriaColumn1Ref.toUpperCase();
-      const critCol2 = answers.CriteriaColumn2Ref.toUpperCase();
+      const sheet = answers.SourceSheet;
+      const dataCol = toRange(answers.DataColumnRef);
+      const critCol1 = toRange(answers.CriteriaColumn1Ref);
+      const critCol2 = toRange(answers.CriteriaColumn2Ref);
+      const delimiter = quoteIfString(answers.Delimiter);
+      const critVal1 = `TRIM(${answers.CriteriaValue1})`;
+      const critVal2 = quoteIfString(answers.CriteriaValue2);
 
-      const formula = `=TEXTJOIN(${quoteIfString(answers.Delimiter)}; TRUE; FILTER('${answers.SourceSheet}'!${dataCol}; ('${answers.SourceSheet}'!${critCol1}=${answers.CriteriaValue1})*('${answers.SourceSheet}'!${critCol2}=${quoteIfString(answers.CriteriaValue2)}); ${quoteIfString(answers.DefaultValue)}))`;
+      const formula = `=IFERROR(\n  TEXTJOIN(${delimiter}; TRUE;\n    FILTER(\n      '${sheet}'!${dataCol};\n      (TRIM('${sheet}'!${critCol1})=${critVal1}) *\n      (TRIM('${sheet}'!${critCol2})=${critVal2})\n    )\n  );\n  ""\n)`;
 
       console.log("\nCông thức Excel tạo ra:\n");
       console.log(formula);
