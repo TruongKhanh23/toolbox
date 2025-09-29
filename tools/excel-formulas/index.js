@@ -5,6 +5,7 @@ import generateKeyFromMultipleColumns from "./generate-key-from-multiple-columns
 import generateTextJoinFilterFormula from "./generate-text-join-filter-formula.js";
 import conditionalFormattingCellWithoutString from "./conditional-formatting-without-string.js";
 import generateTextJoinUniqueFilterFormula from "./generate-text-join-unique-filter-formula.js";
+import generateAutoSerialNumberFormula from "./auto-generate-serial-number.js";
 
 export default {
   1: conditionalFormatingDuplicateValue,
@@ -14,4 +15,5 @@ export default {
   5: generateTextJoinFilterFormula,
   6: conditionalFormattingCellWithoutString,
   7: generateTextJoinUniqueFilterFormula,
+  8: generateAutoSerialNumberFormula,
 };
