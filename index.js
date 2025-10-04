@@ -4,11 +4,13 @@ import path from "path";
 // --- Import các folder (mỗi folder có index.js xuất default object số → function) ---
 import caPheMuoiChuLong from "./tools/ca-phe-muoi-chu-long/index.js";
 import excelFormulas from "./tools/excel-formulas/index.js";
+import convertTxtToExcel from "./tools/convert-txt-to-excel/index.js";
 
 // --- Object gom các folder ---
 const folders = {
   "ca-phe-muoi-chu-long": caPheMuoiChuLong,
   "excel-formulas": excelFormulas,
+  "convert-txt-to-excel": convertTxtToExcel,
 };
 
 // --- Đọc folder cần chạy ---
