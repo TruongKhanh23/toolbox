@@ -23,12 +23,24 @@ export default function generateKeyFromMultipleColumns() {
         if (i >= numCols) {
           rl.question("Nhập dòng bắt đầu (ví dụ 6): ", (rowInput) => {
             const row = rowInput.trim();
-            // Tạo công thức Excel TEXTJOIN
-            const formulaParts = columns.map(col => `${col}${row}`);
-            const formula = `=IF(COUNTA(${formulaParts.join(";")})=0;"";TEXTJOIN("${delimiter}";TRUE;${formulaParts.join(";")}))`;
-            console.log("Công thức Excel tạo ra:");
-            console.log(formula);
-            rl.close();
+
+            // Hỏi có muốn thay thế dấu gạch bằng khoảng trắng
+            rl.question("Có muốn thay thế dấu gạch thành khoảng trắng không? (Y/N): ", (replaceInput) => {
+              const replaceDash = replaceInput.trim().toUpperCase() === "Y";
+
+              // Tạo công thức Excel TEXTJOIN
+              const formulaParts = columns.map(col => {
+                const cellRef = `${col}${row}`;
+                return replaceDash ? `SUBSTITUTE(${cellRef};"_";" ")` : cellRef;
+              });
+
+              const formula = `=IF(COUNTA(${formulaParts.join(";")})=0;"";TEXTJOIN("${delimiter}";TRUE;${formulaParts.join(";")}))`;
+
+              console.log("\nCông thức Excel tạo ra:");
+              console.log(formula);
+
+              rl.close();
+            });
           });
           return;
         }
