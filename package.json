@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/TruongKhanh23/toolbox/issues"
   },
-  "homepage": "https://github.com/TruongKhanh23/toolbox#readme"
+  "homepage": "https://github.com/TruongKhanh23/toolbox#readme",
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
 }

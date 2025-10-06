@@ -1,0 +1,378 @@
+A
+absolute assignmentAn assignment of a life insurance policy under which the policyowner transfers all policy ownership rights to the assignee. Contrast with collateral assignment.
+accelerated death benefitA supplemental life insurance policy benefit which provides that a policyowner may elect to receive all or part of the policy's death benefit before the insured's death if certain conditions are met. Also known as a living benefit.
+accidental death and dismemberment (AD&D) benefitA supplemental life insurance policy benefit that provides an accidental death benefit and provides a dismemberment benefit payable to the insured if an accident causes the insured to lose any two limbs or the sight in both eyes.
+accidental death benefitA supplemental life insurance policy benefit that provides a death benefit in addition to the policy's basic death benefit if the insured dies as a result of an accident.
+accumulated valueDuring a deferred annuity's accumulation period, the amount paid for the deferred annuity, plus earnings, minus the amount of any withdrawals and fees. Also known as accumulation value, contract value, or account value.
+accumulation at interest dividend optionA policy dividend option under which the policy dividends are left on deposit with the insurer to accumulate at interest.
+accumulation periodThe period between the contract owner's purchase of a deferred annuity and either the date that the contract's payout period begins or the date that the contract's surrender value is paid.
+accumulation unitAn ownership share in a selected subaccount of a separate account portfolio held during the accumulation period of a variable deferred annuity.
+actively-at-work provisionA group insurance policy provision which states that, in order to be eligible for coverage, an employee must be actively at work—rather than ill or on leave—on the day the insurance coverage is to take effect.
+activities of daily living (ADLs)The activities of eating, bathing, dressing, continence, toileting, or transferring into or out of a bed, chair, or wheelchair.
+actuaryAn expert in financial risk management and the mathematics and modeling of insurance, annuities, and financial instruments.
+additional term insurance dividend optionA policy dividend option under which the insurer uses each policy dividend as a net single premium to purchase one-year term insurance on the insured's life.
+Affordable Care Act (ACA)In the U.S., a law that requires insurance companies to accept all applicants for medical expense coverage and restricts insurers from basing premium rates on preexisting conditions.
+aleatory contractA contract under which one party provides something of value to another party in exchange for a conditional promise.
+annuitantThe person whose lifetime the insurance company uses to determine the amount and duration of annuity payments payable under an annuity contract.
+annuitizationThe optional process of converting the accumulated value of a deferred annuity into annuity payments.
+annuityA financial product under which an insurer promises to make a series of periodic payments to a named person or entity in exchange for a premium or series of premiums.
+annuity paymentsThe monthly, quarterly, semiannual, or yearly periodic income payments that the insurer promises to pay under the terms of an annuity.
+annuity periodThe time span between each annuity payment.
+annuity start dateThe date on which the insurer is required to begin making annuity payments under a deferred annuity contract.
+antiselectionThe tendency of individuals who believe they have a greater-than-average likelihood of loss to seek insurance protection to a greater extent than do other individuals.
+assetAn item of value that a company owns. Examples of assets include cash, buildings, and investments.
+assigneeThe party to whom life insurance property rights are transferred.
+assignmentAn agreement under which an insurance policyowner transfers some or all of his ownership rights in the policy to another party.
+assignment provisionA life insurance policy provision which describes the roles of the insurer and the policyowner when the policy is assigned.
+assignorThe policyowner who makes an assignment of a life insurance policy.
+attained ageThe age an insured has reached (attained) on a specified date.
+attained age conversionA conversion of a term life insurance policy to a cash value life insurance policy in which the premium rate for the cash value policy is based on the insured's age at the time the policy is converted. Contrast with original age conversion.
+automatic dividend optionA specified policy dividend option that the insurer will apply if a policyowner does not choose an option.
+automatic nonforfeiture benefitA specific nonforfeiture benefit that becomes effective automatically when a renewal premium for a cash value life insurance policy is not paid by the end of the grace period and the policyowner has not elected another nonforfeiture option.
+automatic premium loan optionA cash value life insurance policy nonforfeiture option under which the insurer will automatically pay an overdue premium for the policyowner by making a loan against the policy's cash value as long as the cash value equals or exceeds the amount of the premium due.
+B
+bargaining contractA contract in which both parties, as equals, set the terms and conditions of the contract.
+beneficiaryThe person or legal entity who may receive any value remaining in the annuity contract upon the death of the contract owner or annuitant.
+benefit periodThe time during which the insurer agrees to pay income benefits to the insured under a disability income or long-term care insurance policy.
+benefit scheduleA schedule included in a group life insurance policy that defines the amount of life insurance the policy provides for each insured.
+benefit triggerA long-term care insurance policy requirement specifying the conditions that establish an insured's eligibility to receive long-term care benefits.
+bilateral contractA contract in which both parties make legally enforceable promises when they enter into the contract.
+block of policiesA group of policies issued to insureds who are all the same age, the same sex, and in the same risk classification.
+C
+capitalAn amount of money that a company's owners invested in the company, usually through the purchase of company stock.
+cash dividend optionA policy dividend option under which the insurance company sends the policyowner a check in the amount of the policy dividend that was declared.
+cash payment nonforfeiture optionA cash value life insurance policy nonforfeiture option under which the policyowner discontinues premium payments and receives the policy's cash surrender value in a lump-sum payment.
+cash surrender valueThe amount of the cash value that a policyowner is entitled to receive upon surrender of the policy.
+cash valueThe savings element of a cash value life insurance policy, which represents the policyowner's ownership interest in the policy.
+cash value life insuranceLife insurance that provides insurance coverage throughout the insured's lifetime and provides a savings element, known as the cash value. Sometimes known as permanent life insurance.
+certificate of authorityA document that grants an insurer the right to conduct an insurance business and sell insurance products in the jurisdiction that grants the certificate. Also known as a license.
+certificate of insuranceA document that describes the coverage that the group insurance contract provides and a group insured's rights under the contract.
+children's insurance riderA supplemental life insurance policy benefit that provides term life insurance coverage on the insured's children.
+class designationA beneficiary designation that identifies a certain group of persons, rather than naming each person.
+closed contractA contract for which only those terms and conditions that are printed in—or attached to—the contract are considered to be part of the contract.
+cognitive impairmentIn long-term care (LTC) insurance underwriting, a mental incapacity that prevents a person from performing activities of daily living (ADLs) or from living safely. See also activities of daily living.
+coinsuranceAn expense participation requirement imposed by many medical expense plans; the requirement generally is a specified percentage of all allowable expenses that remain after the insured has paid the deductible and that must be paid by the insured.
+collateral assignmentA temporary assignment of the monetary value of a life insurance policy as collateral—or security—for a loan. Contrast with absolute assignment.
+community-property stateA U.S. state in which, by law, each spouse is entitled to an equal share of the income earned by the other and, under most circumstances, to an equal share of the property acquired by the other during the marriage.
+commutation rightA right sometimes included in an annuity contract that allows a lump-sum payment from the contract's principal even while the contract owner is receiving annuity payments.
+commutative contractA contract under which the parties specify in advance the values that they will exchange; moreover, the parties generally exchange items or services that they think are of relatively equal value.
+compound interestInterest on both the principal and the accrued interest.
+compoundingCalculating an interest amount on both the principal and the accrued interest.
+conditional promiseA promise to perform a stated act if a specified, uncertain event occurs; if the event does not occur, the promise will not be performed.
+considerationA requirement for the formation of a valid contract that is met when each party gives or promises something that is of value to the other party.
+consolidationThe combining of financial services institutions primarily through mergers and acquisitions. Consolidation results in fewer traditional financial services institutions.
+consumer-driven health planAn employer-sponsored health benefit plan that gives individuals the freedom to choose health care providers and benefits, but also requires them to assume the financial risk for their choices.
+contingent beneficiaryThe party named to receive the policy proceeds if the primary beneficiary should die before the insured. Sometimes referred to as a secondary beneficiary or successor beneficiary.
+contingent payeeThe person or other entity who will receive any remaining annuity payments upon the death of the payee.
+contingent payeeThe person or party who will receive any life insurance proceeds still payable at the time of the payee's death. Also known as successor payee.
+continuous-payment whole life insuranceA whole life insurance policy under which premiums are payable until the death of the insured. Also known as straight life insurance or ordinary life insurance.
+contractA legally enforceable agreement between two or more parties.
+contract of adhesionA contract that one party prepares and that the other party must accept or reject as a whole, generally without any bargaining between the parties to the agreement.
+contract of indemnityAn insurance policy under which the amount of the policy benefit payable for a covered loss is based on the actual amount of financial loss that results from the covered event, as determined at the time of the event.
+contract ownerThe person or other entity who owns and exercises all the rights and privileges of an annuity contract.
+contractual capacityThe legal capacity to make a contract.
+contributory planA group insurance plan under which insured group members must pay part or all of the premium for their coverage.
+convergenceThe movement toward a single financial institution being able to serve a customer's banking, insurance, and securities needs.
+conversion periodThe specified period of time following policy issue during which the owner of a convertible term life insurance policy can convert the coverage to cash value life insurance.
+conversion privilegeA group life insurance policy provision that allows a group insured whose coverage terminates for certain reasons to convert his group life insurance coverage to an individual life insurance policy, usually without presenting evidence of his insurability.
+convertible term insuranceTerm life insurance that gives the policyowner the right to convert the term policy to a cash value life insurance policy without providing evidence of insurability.
+copaymentA specified, fixed amount paid by a managed care plan member to a network provider when she receives services from the provider.
+corporationA legal entity that is created by the authority of a governmental unit and that is separate and distinct from the people who own it. As a legal entity, a corporation can enter into contracts, own property, and be sued or sue others in a court of law.
+cost of benefitsThe value of the benefits guaranteed by the insurer. For purposes of pricing an insurance product, the cost of benefits equals all of the insurer's potential payments of benefit obligations to customers multiplied by the expected probability that each benefit will be payable.
+cost-of-living adjustment (COLA) benefitA disability income insurance benefit that provides for periodic increases in the disability income benefit amount that the insurer will pay to a disabled insured; these increases usually correspond to increases in the cost of living.
+credit life insuranceA type of term life insurance designed to pay the balance due on a loan if the borrower dies before the loan is repaid.
+current interest-crediting rateThe rate of interest that an insurer declares and pays on a fixed-rate deferred annuity's accumulated value for a specified period of time. Also known as current interest rate.
+D
+daily benefit amountUnder a long-term care insurance policy, the maximum amount the insurer will pay for each day of an insured's long-term care at a care facility or in the patient's home.
+death benefitThe insurance benefit paid when the insured person dies.
+declined riskA proposed insured who is considered to present a risk that is too great for the insurer to cover.
+decreasing term life insuranceTerm life insurance that provides a policy benefit that decreases in amount over the term of coverage.
+deductibleA flat dollar amount of eligible medical expenses that an insured must pay before the insurer begins making any benefit payments under a medical expense insurance policy.
+deferred annuityAn annuity contract under which payment of the annuity payments is deferred for a period of time, usually more than one year after purchase. The deferred annuity gets its name from the deferral of annuity payments and not from the deferral of taxes.
+deferred income annuity (DIA)A fixed annuity bought in the years leading up to retirement that, at the time of purchase, locks in a guaranteed stream of income to begin at some specified future time.
+defined benefit (DB) planA retirement plan that specifies the amount of the benefit that each plan participant will receive at retirement.
+defined contribution (DC) planA retirement plan in which retirement benefits are determined by contributions (employer and employee) and investment results.
+dental expense coverageMedical expense insurance coverage that provides benefits for routine dental examinations, preventive dental work, and dental procedures needed to treat tooth decay and diseases of the teeth and jaw.
+depository institutionA financial institution that specializes in accepting deposits and making loans.
+direct writerIn a reinsurance transaction, the insurance company that purchases reinsurance to transfer all or part of the risks on insurance policies the company issued.
+disability income benefitA supplemental life insurance policy benefit that provides a monthly income benefit to the policyowner-insured if she becomes totally disabled while the policy is in force.
+disability income coverageHealth insurance coverage that provides income replacement benefits to an insured who is unable to work because of sickness or injury.
+dividend optionsSpecified methods by which the owner of a participating life insurance policy or participating annuity may receive policy dividends.
+divisible surplusA portion of an insurer's earnings set aside specifically for distribution to owners of participating policies.
+Dodd-Frank Wall Street Reform and Consumer Protection ActU.S. legislation passed in 2010 in the wake of the 2008 financial crisis to reshape the regulation of financial institutions. Dodd-Frank is administered in part by the Securities and Exchange Commission (SEC) and in part by the Treasury Department. Also known as Dodd-Frank.
+dread disease benefitAn accelerated death benefit under which the insurer agrees to pay a portion of the policy's face amount to the policyowner if the insured suffers from one of a number of specified diseases. Also known as a critical illness benefit.
+dread disease coverageSupplemental medical expense insurance coverage that provides benefits in a lump-sum or installments for medical expenses incurred by the insured who has contracted a specified disease. Also known as critical illness (CI) coverage.
+E
+eligibility periodA specified period of time, usually 31 days, during which a new group member may first enroll for group insurance coverage in a contributory group insurance plan. Also known as enrollment period.
+elimination periodThe specific amount of time that the insured must be disabled before becoming eligible to receive disability income benefits or the specific amount of time the insured must be receiving long-term care before becoming eligible to receive long-term care benefits. Also known as a waiting period.
+endorsement methodA method of transferring ownership of a life insurance policy under which the ownership change becomes effective when the policyowner notifies the insurer, in writing, of the change and the insurance company notes the ownership change in its records.
+entire contract provisionAn insurance and annuity policy provision that defines the documents that constitute the contract between the insurance company and the policyowner.
+equity-indexed annuity (EIA)A type of annuity that offers certain principal and earnings guarantees, but also offers the possibility of additional earnings by linking the contract to a published index.
+Employee Retirement Income Security Act (ERISA)The Employee Retirement Income Security Act—a U.S. federal law designed to protect covered employees and their beneficiaries by ensuring that employee benefit plans meet specified requirements.
+evidence of insurabilityProof that a given person is an insurable risk.
+exclusionAn insurance policy provision that describes the circumstances under which the insurer will not pay the policy proceeds following an otherwise covered loss.
+extended term life insurance nonforfeiture optionA cash value life insurance policy nonforfeiture option under which the policyowner discontinues paying premiums and uses the policy's net cash surrender value to purchase term insurance for the full coverage amount provided under the original policy, for as long a term as the net cash surrender value can provide.
+F
+face amountThe amount of the policy benefit that is payable if the insured dies while the policy is in force. Also known as face value.
+family income coverageA plan of decreasing term life insurance that provides a stated monthly income benefit amount if the insured dies during the term of coverage.
+Federal Insurance Office (FIO)A new federal agency created by the Dodd-Frank Act with federal authority to monitor the insurance industry.
+finance companyA financial institution that specializes in making short- and medium-term loans to businesses and people.
+financial institutionA business that owns primarily financial assets, such as stock and bonds, rather than fixed assets, such as equipment and raw materials.
+financial services industryAn industry in which financial institutions help people, businesses, and governments with their asset accumulation, asset management, and asset protection needs.
+fixed accountFor variable deferred annuities and fixed indexed annuities (FIAs), a fund that offers a guaranteed rate of interest.
+fixed amount annuityA payout option that guarantees the insurer will provide annuity payments of at least a specified minimum amount for as long as the premium payment will provide, regardless of whether the annuitant is living.
+fixed annuityAn annuity contract under which the insurer guarantees (1) a minimum interest rate that will be applied to the accumulated value (for fixed deferred annuities) and (2) the minimum amount of the annuity payments that will be paid (for fixed immediate annuities).
+fixed indexed annuity (FIA)A type of fixed deferred annuity that offers principal and interest-rate guarantees, as well as the possibility of additional earnings based on changes in an index.
+fixed period annuityA payout option that guarantees the insurer will make annuity payments for a specified period of time.
+fixed period optionAn annuity contract payout option under which the insurer makes annuity payments for a specified period of time.
+fixed-amount optionA life insurance policy settlement option under which the insurance company pays equal installments of a stated amount until the policy proceeds, plus the interest earned, are exhausted.
+fixed-period optionA life insurance policy settlement option under which the insurance company agrees to pay policy proceeds in equal installments to the payee for a specified period of time.
+fixed-rate deferred annuity (FRDA)A type of annuity contract in which the insurer guarantees a minimum interest rate that will be applied to the accumulated value.
+flexible-premium deferred annuity (FPDA)An annuity that allows the contract owner to make multiple premium payments after the contract is issued and under which annuity payments are deferred for a period of time, usually more than a year, after the contract is purchased.
+formal contractA contract that is enforceable because the parties met certain formalities concerning the form of the agreement.
+fraudulent misrepresentationA misrepresentation that was made with the intent to induce the other party to enter into a contract and that did induce the innocent party to enter into the contract.
+free-look provisionAn insurance and annuity policy provision that gives the policyowner a stated period of time—usually at least 10 days—after the policy is delivered in which to examine the policy. Also known as free-examination provision.
+funding vehicleAn arrangement for investing a retirement plan's assets as those assets are accumulated. Also known as investment vehicle or funding instrument.
+G
+general accountAn investment account in which an insurer maintains funds that support its contractual obligations to pay benefits under its guaranteed insurance products, such as whole life insurance and other nonvariable products.
+globalizationThe tendency of businesses, technologies, or philosophies to spread throughout the world.
+grace period provisionAn insurance policy provision that specifies a length of time following each renewal premium due date within which the premium may be paid without loss of coverage.
+group annuityAn annuity purchased by a plan sponsor to provide annuity payments at retirement to plan participants.
+group creditor life insuranceGroup life insurance issued to a creditor, such as a bank, to insure the lives of the creditor's current and future debtors.
+group insuranceA method of providing life or health insurance coverage for a group of people under one insurance contract.
+group insurance policyA policy that is issued to insure the lives or health of a specific group of people under one insurance contract.
+group insuredAn individual covered by a group insurance policy.
+group level premium whole life planGroup plan of cash value insurance that provides level premium whole life insurance. A group insured has a vested right in the policy's cash value provided by his premium contributions.
+group paid-up planGroup plan of cash value life insurance that combines paid-up whole life insurance with term life insurance to provide a predetermined amount of coverage. If the group insured leaves the group for any reason, the amount of purchased paid-up coverage remains in force for the group member's lifetime.
+group policyholderThe person or organization that decides what types of group insurance coverage to purchase for a specific group, negotiates the terms of the group insurance contract, and purchases the group insurance coverage.
+group universal life planGroup plan of cash value insurance that provides universal life insurance; covered group members usually pay the entire premium.
+guaranteed insurability benefitA supplemental life insurance policy benefit that gives the policyowner the right to purchase additional insurance of the same type as the basic life insurance policy—for an additional premium amount—on specified option dates (typically every three years) during the life of the policy without supplying evidence of the insured's insurability. Also known as a guaranteed insurability option (GIO).
+guaranteed lifetime withdrawal benefit (GLWB)A living benefit rider that guarantees annual withdrawals of a specified percentage of a protected value—known as the "benefit base"—for life without annuitizing the contract.
+guaranteed minimum accumulation benefit (GMAB)A living benefit rider that guarantees the contract owner will always have a minimum protected amount if the annuity stays in force for a specified period of time, regardless of the investment performance of the accumulated value.
+guaranteed minimum death benefit (GMDB)A variable annuity rider that guarantees that, if the annuitant dies before annuity payments begin, the beneficiary will receive at least a stated minimum amount, regardless of the contract's accumulated value at that time.
+guaranteed minimum income benefit (GMIB)A living benefit rider that guarantees a minimum annuity payment amount for life based on the annuitization of a protected value—known as the "benefit base"—regardless of the investment performance of the accumulated value.
+guaranteed minimum interest-crediting rateThe minimum interest rate an insurer must pay on a fixed-rate deferred annuity contract's accumulated value. Also known as guaranteed minimum interest rate.
+guaranteed minimum withdrawal benefit (GMWB)A living benefit rider that guarantees that, during the accumulation period, a contract owner may withdraw annually a specified percentage of a protected value—known as the "benefit base"—regardless of the investment performance of the accumulated value.
+H
+health maintenance organization (HMO)A health care financing and delivery system that provides comprehensive health care services to plan members, often referred to as subscribers, in a particular geographic area.
+health reimbursement accountA personal health spending account that can be funded only by employer contributions and may be established by employers of any size.
+health savings account (HSA)A personal health spending account that includes (1) a maximum annual tax-deductible contribution, and (2) minimum deductibles for the accompanying medical expense policy.
+high-deductible health plan (HDHP)A medical expense insurance plan that has a high deductible (usually at least $1,000 or more) and typically costs less than traditional health insurance. Usually used in association with a health savings account or health reimbursement arrangement to provide benefits for qualified medical expenses.
+I
+immediate annuityAn annuity under which the annuity payments begin no later than one year after the annuity is purchased.
+incontestability provisionAn insurance and annuity policy provision that describes the time limit within which the insurer has the right to avoid the contract on the ground of material misrepresentation in the application.
+increasing term life insuranceTerm life insurance that provides a death benefit that starts at one amount and increases by some specified amount or percentage at stated intervals over the policy term.
+indexA statistical measurement system that tracks the performance of a group of similar investments.
+indexed universal life insuranceA type of universal life insurance that offers certain principal value and earnings guarantees, but also offers the possibility of additional earnings by linking the cash value to a published index. Also called equity indexed universal life (EIUL) insurance.
+individual insurance policyA policy that is issued to insure the life or health of a named person.
+individual annuityAn annuity purchased and owned directly by a person or purchased by a legal entity, such as a trust, on behalf of a person.
+individual retirement annuityIn the United States, an individual retirement arrangement that takes the form of an individual annuity issued by an insurance company. Sometimes referred to as an IRA. See also individual retirement arrangement, individual retirement account, traditional IRA, and Roth IRA.
+individual retirement arrangement (IRA)In the United States, a tax-favored retirement savings vehicle that meets requirements specified in federal tax laws and, thus, receives favorable federal income tax treatment; can take the form of either an individual retirement account or an individual retirement annuity.
+informal contractA contract that is enforceable because the parties to the contract met requirements concerning the substance of the agreement rather than requirements concerning the form of the agreement.
+initial premiumThe first premium paid for an insurance policy.
+insurable interestThe interest that an insurance policyowner has in the risk that is insured. A policyowner has an insurable interest if she is likely to suffer a genuine loss or detriment should the event insured against occur.
+insurance commissionerThe individual who is responsible for directing the operations of the state insurance department. Also known as the superintendent of insurance or director of insurance.
+insurance companyA company that accepts risk and makes a promise to pay a policy benefit if the covered loss does occur.
+insurance companyA financial institution that accepts risk and makes a promise to pay a policy benefit if a loss does occur.
+insurer-administered planA group insurance plan for which the insurer is responsible for handling the administrative and recordkeeping aspects of the plan.
+intangible propertyProperty that represents ownership of a legal right, such as a contractual right.
+interestA payment for the use of money.
+interest creditsMonetary credits earned on premiums that are determined according to a specified index-crediting mechanism that tracks changes in the reference index.
+interest optionA life insurance policy settlement option under which the insurance company invests the policy proceeds and periodically pays interest on those proceeds to the payee.
+investment management feeA fee charged the owner of a variable annuity which covers the costs of managing and operating the investment funds underlying the variable subaccounts. Also known as asset management fee.
+irrevocable beneficiaryA beneficiary who has a vested interest in the policy proceeds during the insured's lifetime because the policyowner can change the beneficiary designation only after obtaining the beneficiary's consent. Contrast with revocable beneficiary.
+J
+joint annuitantA person, in addition to the primary annuitant, whose lifetime the insurance company uses to determine the amount and duration of annuity payments payable under an annuity contract.
+joint and survivor annuityA payout option that provides a series of annuity payments based on the life expectancies of two annuitants, and those payments continue until the last annuitant dies.
+joint whole life insuranceA plan of whole life insurance that has the same features and benefits as individual whole life insurance, except that it insures two people under the same policy; the death benefit is payable when the first insured dies.
+K
+Keogh planIn the United States, a qualified retirement plan set up by a self-employed individual, sole proprietorship, or partnership to which the business or individual can make annual tax-deductible contributions, subject to certain limits and conditions.
+L
+lapseThe termination of an insurance policy for nonpayment of premium.
+lapse rateThe annual percentage of policies that do not remain in force because the policyowner stops paying premiums.
+last survivor life insuranceA variation of joint whole life insurance under which the policy benefit is paid only after both people insured by the policy have died.
+law of large numbersA mathematical theory which states that, typically, the more times we observe a particular event, the more likely it is that our observed results will approximate the true probability that the event will occur.
+level term life insuranceTerm life insurance that provides a policy benefit that remains the same over the term of the policy.
+liabilityA company's debt or future obligation.
+life and health insurance guaranty associationIn each state in the United States, an organization that protects policyowners, insureds, beneficiaries, annuitants, payees, and assignees against losses that might result from the impairment or insolvency of a life or health insurer that does business in the state. Insurers are required to participate in a state's guaranty association in order to be licensed in that state.
+life annuityA payout option that guarantees the insurer will provide annuity payments for only as long as the annuitant lives.
+life income with period certain annuityA payout option that guarantees the insurer will provide annuity payments throughout the annuitant's lifetime and guarantees that the payments will be made for at least a specified period, even if the annuitant dies before the end of that period.
+life income optionA life insurance policy settlement option under which the insurance company agrees to pay the policy proceeds in periodic installments over the payee's lifetime.
+life income with refund annuityA payout option that guarantees the insurer will provide annuity payments throughout the annuitant's lifetime and guarantees the insurer will pay benefits at least equal to the annuity's purchase price if the annuitant dies. Also called a refund annuity.
+life insuranceInsurance that pays a benefit upon the death of a named person.
+limited-payment whole life insuranceA whole life insurance policy for which premiums are payable only for a stated period of time or until the insured's death, whichever occurs first.
+long-term care (LTC) coverageHealth insurance that provides benefits for medical and other services to insureds who need care for an extended period in their own homes or in a qualified facility.
+long-term care (LTC) insurance benefitAn accelerated death benefit under which the insurer agrees to pay a monthly benefit to a policyowner if the insured requires constant care for a medical condition.
+loss rateThe frequency of losses insureds are likely to experience.
+M
+major medical coverageMedical expense insurance coverage that provides substantial benefits for (1) basic hospital, surgical, and physician expenses, (2) additional medical services related to illness or injuries, and (3) preventive care.
+managed care planAn arrangement that integrates the financing and management of health care with the delivery of health care services to a group of individuals who have enrolled in the plan.
+market conduct lawA law that regulates how insurance companies conduct business.
+master group insurance contractAn insurance contract that insures a number of people.
+material misrepresentationA misrepresentation that is relevant to an insurance company's evaluation of the proposed insured.
+maximum out-of-pocket provisionA major medical expense insurance policy provision which states that the policy will cover 100 percent of allowable medical expenses after the insured has paid a specified amount out of pocket to satisfy deductible and coinsurance requirements. Also known as stop-loss provision.
+McCarran-Ferguson Act (Public Law 15)A U.S. federal law under which the U.S. Congress left insurance regulation to the state governments, as long as Congress determines that regulation to be adequate.
+medical expense coverageA type of health insurance coverage that provides benefits to pay for the treatment of an insured's illnesses and injuries.
+medical risk factorA physical or psychological characteristic that may increase the likelihood of loss.
+misrepresentationA false or misleading statement in an application for insurance.
+misstatement of age or sex provisionA life insurance or annuity policy provision that describes the action the insurer will take to adjust the amount of the policy benefit in the event that the age or sex of the insured is incorrectly stated.
+model billA sample law offered by the NAIC that the states are encouraged to use as a basis for their laws.
+modified coverage whole life insuranceA whole life insurance policy under which the amount of insurance provided decreases by specific percentages or amounts either when the insured reaches certain stated ages or at the end of stated time periods.
+modified-premium whole life insuranceA whole life insurance policy for which the annual premium amount changes after a specified initial period (typically 5 or 10 years).
+moral hazardA characteristic that exists when the reputation, financial position, or criminal record of an applicant or a proposed insured indicates that the person may act dishonestly in the insurance transaction.
+mortality and expense risk (M&E) chargeA fee charged the owner of a variable annuity which covers various risks and expenses assumed by the insurer; including the risk involved in providing the annuity death benefit and certain other guarantees.
+mortality experienceThe number of deaths that actually occur in a given group of insured.
+mortality rateThe rate at which death occurs among a specified group of people during a specified period, typically one year.
+mortality tableA chart that displays the number of people in a large group who are likely to die at certain ages.
+mortgage insuranceA plan of decreasing term insurance designed to provide a benefit amount that corresponds to the decreasing amount owed on a mortgage loan.
+mutual assentA meeting of the minds about the terms of an agreement.
+mutual fundAn investment portfolio with a distinct investment objective and risk profile. Investors purchase mutual fund shares that represent a proportional ownership interest in the underlying assets of the portfolio.
+mutual fund companyA financial institution that pools money from many, often thousands, of investors to build diversified portfolios of investment securities.
+N
+National Association of Insurance CommissionersIn the United States, a nongovernmental association of the insurance commissioners of all the states whose primary function is to promote uniformity of state insurance regulation by developing model laws and regulations as guidelines for the states.
+net cash surrender valueThe amount the owner of a cash value life insurance policy actually receives—after the insurer makes any additions or subtractions to the cash surrender value—upon surrendering the policy.
+noncontributory planA group insurance plan for which insured group members are not required to pay any part of the group insurance premium.
+nonforfeiture provisionA cash value life insurance policy provision that sets forth the options available to the policyowner if the policy lapses or if the policyowner decides to surrender—or terminate—the policy.
+non-natural ownerFor a nonqualified annuity, an entity such as a trust, partnership, or corporation that owns the annuity contract.
+nonparticipating policyA type of insurance policy in which the policyowner does not share in the insurer's divisible surplus. Also known as a nonpar policy. Contrast with participating policy.
+nonqualified annuityAn annuity purchased outside of a tax-advantaged retirement plan or an individual retirement arrangement (IRA).
+O
+open contractA contract that identifies the documents that constitute the contract between the parties, but all the enumerated documents are not necessarily attached to the contract.
+original age conversionA conversion of a term life insurance policy to a cash value life insurance policy in which the premium rate for the cash value policy is based on the insured's age when the original term life insurance policy was issued. Contrast with attained age conversion.
+owners' equityThe owners' financial interest in a company, which is the difference between the amount of the company's assets and the amount of its liabilities.
+ownership of propertyThe sum of all the legal rights that exist in a piece of property.
+P
+paid-up additional insurance dividend optionA policy dividend option under which the insurer uses any declared policy dividend as a net single premium to purchase paid-up additional insurance on the insured's life; the paid-up additional insurance is issued on the same plan as the basic policy and in whatever face amount the dividend can provide at the insured's attained age.
+paid-up additions option benefitA supplemental life insurance policy benefit that allows the owner of a whole life insurance policy to purchase single-premium paid-up additions to the policy on stated dates in the future without providing evidence of the insured's insurability.
+partial disabilityA disability that prevents the insured either from performing some of the duties of his usual occupation or from engaging in that occupation on a full-time basis.
+participating policyA type of insurance policy under which the policyowner shares in the insurance company's divisible surplus. Sometimes referred to as a par policy. Contrast with nonparticipating policy.
+payee(1) For a life insurance policy, the person or party who is to receive the policy proceeds under a settlement option. (2) For an annuity contract, a natural person or legal entity designated by the contract owner to receive annuity payments if the annuitant does not receive them.
+payout optionsThe choices a contract owner has as to how the insurer will distribute the annuity payments. Also known as annuity options.
+payout periodThe period during which the insurer makes guaranteed annuity payments.
+pensionA lifetime monthly income benefit that begins at retirement.
+personal propertyAll property other than real property.
+plan administratorThe party that is responsible for the administrative aspects of a retirement plan's operation.
+plan participantAn employee or union member covered by a group retirement plan.
+plan sponsorAn employer or union that establishes a retirement plan for the benefit of their employees or members.
+point of service (POS) planA managed care plan that combines features of HMOs and PPOs; plan members who need medical care choose, at the point of service, whether to seek care in-network or out-of-network.
+policy benefitThe amount of money an insurer promises to pay if a covered loss occurs.
+policy dividendAn amount of money that is considered to be a return of a portion of the premium a policyowner paid to the company in a policy year in which the company's financial results were positive.
+policy dividendA life insurance policyowner's or annuity contract owner's share of the insurance company's divisible surplus.
+policy formA standardized form that shows the terms, conditions, benefits, and ownership rights of a particular type of insurance product.
+policy loanA loan a policyowner receives from an insurer using the cash value of a life insurance policy as security.
+policy loan provisionA cash value life insurance provision that specifies the terms on which the policyowner can obtain a loan against the policy's cash value.
+policy loan repayment dividend optionA policy dividend option under which the insurer applies policy dividends toward the repayment of an outstanding policy loan.
+policy reservesLiabilities that represent the amount an insurer estimates it needs to pay future benefits.
+policy riderIn the context of an annuity contract, a form attached to the contract that changes or amends the contract's provisions. The policy rider becomes part of the contract and either expands or limits the benefits payable under it. Also known as an endorsement or a rider.
+policy termThe specified period of time during which a term life insurance policy provides coverage.
+policy withdrawal provisionA universal life insurance policy provision that permits the policyowner to reduce the amount of the policy's cash value by withdrawing up to the amount of the cash value in cash. Also known as a partial surrender provision.
+preferred premium rateA lower-than-standard premium rate charged insureds who are classified as preferred risks.
+preferred provider organization (PPO)A health care benefit arrangement that provides incentives for plan members to use network providers, but also provides at least some coverage for services rendered by non-network providers.
+preferred riskA proposed insured who presents a significantly lower-than-average likelihood of loss.
+premiumA specified amount of money an insurer charges in exchange for agreeing to pay a policy benefit when a specific loss occurs.
+premium payment modeThe frequency at which insurance policy renewal premiums are payable.
+premium rateThe amount an insurer charges per unit of insurance coverage.
+premium reduction dividend optionA policy dividend option under which the insurer applies policy dividends toward the payment of renewal premiums.
+presumptive disabilityA stated condition that, if present, automatically causes the insured to be considered totally disabled.
+primary beneficiaryThe party designated to receive the policy proceeds following the death of the insured. Also known as first beneficiary.
+primary care provider (PCP)A member of a provider network who coordinates insureds' medical care and treatment. Also known as a primary care physician.
+principalThe sum of money originally invested, loaned, or borrowed.
+probabilityThe likelihood that a given event will occur in the future.
+probationary periodThe length of time—typically, from one to six months—that a new group member must wait before becoming eligible to enroll in the group insurance plan.
+profitThe money or revenue that a business receives for its products or services minus the costs it incurs to produce the goods or deliver the services.
+profit-sharing planA defined contribution retirement plan that is funded primarily by cash contributions from the employer's profits.
+propertyA bundle of rights a person has with respect to something.
+provider networkA group of physicians, hospitals, and ancillary services providers that a specific managed care plan has contracted with to deliver health care services to plan insureds for negotiated fees.
+pure riskA risk that involves no possibility of gain; either a loss occurs or no loss occurs.
+Q
+qualified annuityAn annuity purchased to fund or distribute funds from a tax-advantaged retirement plan or an individual retirement arrangement (IRA).
+qualified longevity annuity contract (QLAC)A fixed annuity that a person buys at or near retirement for a lump sum that, at the time of purchase, locks in a guaranteed stream of income to begin at an advanced age, typically at least age 80. Also known as an advanced life deferred annuity (ALDA).
+qualified planA retirement plan that receives favorable income tax treatment by meeting the requirements of U.S. tax laws and the Employee Retirement Income Security Act (ERISA).
+R
+real propertyLand and whatever is growing on or attached to the land.
+reduced paid-up insurance nonforfeiture optionA cash value life insurance policy nonforfeiture option under which the policyowner discontinues paying premiums and uses the policy's new cash surrender value as a net single premium to purchase paid-up life insurance of the same plan as the original policy.
+reference indexThe index specified in a fixed indexed annuity contract, variations in which determine whether interest credits are earned.
+registered index-linked annuity (RILA)A type of variable annuity that offers an investment option linked to a specific index. Also known as an indexed variable annuity (IVA), a structured annuity, and a buffered annuity.
+reinstatementThe process by which an insurer puts back into force a life insurance policy that either has been terminated because of nonpayment of renewal premiums or has been continued under the extended term or reduced paid-up insurance nonforfeiture option.
+reinstatement provisionAn individual life insurance policy provision that describes the conditions that the policyowner must meet to put back into force a life insurance policy that either has been terminated because of nonpayment of renewal premiums or has been continued under the extended term or reduced paid-up insurance nonforfeiture option.
+reinsuranceInsurance that one insurance company, known as the direct writer, purchases from another insurance company, known as the reinsurer, to transfer all or part of the risk on insurance policies that the direct writer has issued.
+reinsurerAn insurance company that accepts risks transferred from another insurer in a reinsurance transaction.
+renewable term insuranceTerm life insurance that gives the policyowner the option to continue the policy's coverage at the end of the specified term without presenting evidence of insurability.
+renewal premiumAn insurance policy premium payable after the initial premium.
+retention limitA maximum amount of insurance that an insurer is willing to carry at its own risk without transferring some of the risk to a reinsurer. The direct writer cedes anything above that limit to a reinsurer in a reinsurance transaction or through other risk transfer mechanisms.
+retrocessionaireA reinsurance company that accepts risks transferred from another reinsurer in a reinsurance transaction.
+return of premium (ROP) term insuranceA form of term life insurance that provides a death benefit if the insured dies during the term of coverage and promises a return of premiums if the insured does not die during the term of coverage.
+revocable beneficiaryA life insurance policy beneficiary who has no right to the policy proceeds during the insured's lifetime because the policyowner has the unrestricted right to change the designation during the life of the insured. Contrast with irrevocable beneficiary.
+right of revocationThe life insurance policyowner's right to change the beneficiary designation.
+riskThe chance or possibility of an unexpected result, either a gain or a loss.
+risk classA grouping of insureds who represent a similar level of risk to an insurer.
+Roth 401(k) featureA 401(k) plan option that allows contributions to be made on an after-tax basis; contributions and investment earnings are tax free upon withdrawal, provided certain conditions are met.
+S
+second insured riderA supplemental life insurance policy benefit that provides term insurance coverage on the life of a person other than the policy's insured. Also known as optional insured rider or additional insured rider.
+Section 403(b) planIn the United States, a type of retirement savings plan that is established by not-for-profit employers, including schools and colleges, for the benefit of employees and that allows both employers and employees to make specified contributions to the plan that reduce current taxable income.
+Section 457 planIn the United States, an arrangement that allows state and local governments and their employees to make contributions to a tax-deferred savings plan established for the benefit of employees.
+Section 7702 corridorIn the United States, the difference between an insurance policy's death benefit and the policy's cash value. This amount is used to determine whether the policy qualifies as a life insurance policy rather than an investment product under federal tax laws.
+securities firmA financial institution that issues securities and engages primarily in investing and trading securities.
+securityA certificate that represents either an ownership interest in a business (for example, a share of stock) or a debt owed by a business, government, or agency (for example, a bond).
+securitiesA certificate that represents either an ownership interest in a business (for example, a share of stock) or a debt owed by a business, government, or agency (for example, a bond).
+segregated accountSee separate account.
+self-administered planA group insurance plan for which the group policyholder is responsible for handling the administrative and recordkeeping aspects of the plan.
+SEP (simplified employee pension)In the United States, a tax-advantaged employer-sponsored retirement plan in which an employer establishes and makes contributions into an IRA for each participating employee.
+separate accountAn investment account the insurer maintains separately from its general account to isolate and help manage the funds placed in its variable products. Also known as a segregated account.
+settlement optionsAlternative methods that the owner or beneficiary of a life insurance policy can elect for receiving payment of the policy proceeds. Also known as optional modes of settlement.
+settlement options provisionA life insurance policy provision that grants a policyowner or a beneficiary several choices as to how the insurance company will distribute the proceeds of a life insurance policy.
+SIMPLE 401(k)In the United States, a qualified retirement plan that may be established by small employers with 100 or fewer employees, including self-employed individuals. Both the employer and the employee can make contributions to the 401(k) plan up to a specified maximum.
+simple interestInterest on the original principal only.
+SIMPLE IRAIn the United States, a tax-advantaged retirement plan that may be established by small employers with 100 or fewer employees, including self-employed individuals. Both the employer and employee can make contributions, up to a specified maximum, to an IRA that the employer has established for the employee.
+single premiumFor life insurance products, a form of premium payment in which one lump sum covers all of the financial considerations for the life of the contract; one-year term life insurance policies are purchased with a single premium.
+single-premium deferred annuity (SPDA)An annuity that allows for a single lump-sum premium payment and under which annuity payments are deferred for a period of time, usually more than a year, after the contract is purchased.
+single-premium immediate annuity (SPIA)An annuity in which the contract owner makes one lump-sum premium payment and begins receiving annuity payments immediately or no more than one year after the annuity is purchased.
+single-premium whole life insuranceA type of limited-payment whole life insurance policy that requires only one premium payment.
+Social Security Disability Income (SSDI)A U.S. federal program that provides disability income benefit payments to qualified individuals.
+solventA company with the financial capacity to pay its debts and contractual obligations when due.
+speculative riskA risk that involves three possible outcomes: loss, gain, or no change.
+spouse and children's insurance riderA supplemental life insurance policy benefit offered by some insurers that provides term life insurance coverage on the insured's spouse and children. Also known as a family insurance rider.
+standard premium rateA premium rate charged insureds who are classified as standard risks.
+standard riskA proposed insured who has a likelihood of loss that is not significantly greater than average.
+state insurance departmentAn administrative agency in each state that is responsible for making sure that companies operating in the state comply with applicable regulatory requirements.
+stock bonus planA retirement plan into which a plan sponsor that is a stock company makes contributions on behalf of plan participants in the form of the corporation's stock.
+stock dividendA portion of a corporation's earnings paid to the owners of the company's stock.
+subaccountOne of several alternative pools of investments to which the owner of a variable life insurance policy or variable annuity allocates the premiums he has paid and the cash values that have accumulated under his policy. Also known as a variable subaccount.
+substandard premium rateA higher-than-standard premium rate charged insureds who are classified as substandard risks.
+substandard riskA proposed insured who has a significantly greater-than-average likelihood of loss but is still found to be insurable.
+suicide exclusion provisionA life insurance policy provision which states that policy proceeds will not be paid if the insured dies as the result of suicide as defined by the policy within a specified period following the date of policy issue.
+summary plan descriptionA written document that is understandable by the average plan participant and that reasonably informs participants and beneficiaries of their rights and obligations under the plan.
+Supplemental Security Income (SSI)A U.S. federal program that provides periodic benefit payments to people with limited incomes who are disabled, blind, or age 65 or older.
+surplusFor an insurer, the amount by which the company's assets exceed its liabilities and capital.
+surrenderA transaction in which the owner of a cash value life insurance contract elects to terminate the contract prior to its maturity and receive the cash surrender value.
+surrender benefitThe amount of the cash value that a policyowner is entitled to receive upon surrender of the policy.
+surrender chargeA fee an insurer imposes when a deferred annuity contract owner makes excess withdrawals as defined in the contract or fully surrenders the contract before the surrender charge period is over. Also known as a contingent deferred sales charge.
+surrender valueThe amount of a deferred annuity's accumulated value, less any surrender charges, that the contract owner is entitled to receive if the contract is surrendered during its accumulation period.
+T
+term life insuranceLife insurance that provides a death benefit only if the insured dies during the period specified in the policy.
+terminal illness benefitA supplemental life insurance policy benefit under which the insurer pays a portion of the policy's death benefit to a policyowner if the insured is suffering from a terminal illness and has a physician-certified life expectancy less than a stated time, generally 12 or 24 months.
+total disabilityA disability that meets the requirements of a disability benefit provision in an insurance policy or policy rider and that qualifies insured covered person to receive disability income benefits.
+U
+underwriterAn insurance company employee who is responsible for evaluating proposed risks.
+underwritingThe process of identifying and classifying the degree of risk represented by a proposed insured.
+unilateral contractA contract in which only one of the parties makes a legally enforceable promise when entering into the contract.
+universal life (UL) insuranceA form of cash value life insurance that is characterized by its flexible premiums, its flexible face amount and death benefit amount, and its separation of the three primary policy elements.
+V
+valid contractA contract that is enforceable at law because it satisfies all legal requirements.
+valued contractAn insurance policy that specifies the amount of the policy benefit that will be payable when a covered loss occurs, regardless of the actual amount of the loss that was incurred.
+variable annuityAn annuity under which the amount of the accumulated value and the amount of the annuity payments may fluctuate in accordance with the performance of one or more specified investment funds.
+variable life (VL) insuranceA form of cash value life insurance in which premiums are fixed, but the death benefit and other values may vary, reflecting the performance of investment subaccounts that the policyowner selects.
+variable universal life (VUL) insuranceCash value life insurance that combines the premium and death benefit flexibility of universal life insurance with the investment flexibility and risk of variable life insurance. Also called flexible-premium variable life insurance.
+vested interestA property right that has taken effect and cannot be altered or changed without the consent of the person who owns the right.
+vestingA plan participant's right to receive full or partial benefits under the plan if she terminates employment prior to retirement.
+vision care coverageMedical expense coverage that provides the insured with benefits for expenses incurred in obtaining eye examinations and corrective lenses.
+voidSomething that was never valid. A void contract is one that was never enforceable at law.
+voidable contractA contract in which a party has the right to avoid obligations under the contract without incurring legal liability.
+W
+waiver of premium for disability (WP) benefitA supplemental life insurance policy benefit under which the insurer promises to give up—to waive—its right to collect premiums that become due while the insured is totally disabled.
+waiver of premium for payor benefitA supplemental life insurance policy benefit which provides that the insurance company will waive the right to collect a policy's renewal premiums if the policyowner dies or becomes totally disabled.
+whole life insuranceA type of cash value life insurance that provides lifetime insurance coverage usually at a level premium rate that does not increase as the insured ages.
+withdrawalA transaction in which the owner of a deferred annuity contract elects to receive a portion of the contract's accumulated value during the accumulation period. Also known as a partial surrender or partial withdrawal.
+workers' compensation programA government-mandated program designed to ensure that workers who are injured or disabled on the job receive fixed monetary awards without requiring the workers to pursue legal action against their employers.
+Y
+yearly renewable term (YRT) insuranceA plan of term life insurance that provides coverage for one year and is renewable at the end of the year. Also known as annually renewable term (ART) insurance.

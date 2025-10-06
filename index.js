@@ -5,12 +5,14 @@ import path from "path";
 import caPheMuoiChuLong from "./tools/ca-phe-muoi-chu-long/index.js";
 import excelFormulas from "./tools/excel-formulas/index.js";
 import exportStringToExcel from "./tools/export-string-to-excel/index.js";
+import convertTxtToExcel from "./tools/convert-txt-to-excel/index.js";
 
 // --- Object gom các folder ---
 const folders = {
   "ca-phe-muoi-chu-long": caPheMuoiChuLong,
   "excel-formulas": excelFormulas,
   "export-string-to-excel": exportStringToExcel,
+  "convert-txt-to-excel": convertTxtToExcel,
 };
 
 // --- Đọc folder cần chạy ---
