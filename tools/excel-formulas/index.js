@@ -6,6 +6,7 @@ import generateTextJoinTwoConditionFilterFormula from "./generate-text-join-two-
 import conditionalFormattingCellWithoutString from "./conditional-formatting-without-string.js";
 import generateTextJoinOneConditionFilterFormula from "./generate-text-join-one-condition-filter-formula.js"
 import generateAutoSerialNumberFormula from "./auto-generate-serial-number.js";
+import generateConditionalFormattingEmptyCell from "./conditional-formatting-empty-cell.js";
 
 export default {
   1: conditionalFormatingDuplicateValue,
@@ -16,4 +17,5 @@ export default {
   6: conditionalFormattingCellWithoutString,
   7: generateTextJoinOneConditionFilterFormula,
   8: generateAutoSerialNumberFormula,
+  9: generateConditionalFormattingEmptyCell,
 };
