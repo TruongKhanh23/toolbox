@@ -1,6 +1,6 @@
 import readline from "readline";
 
-export default function generateTextJoinUniqueFilterFormula() {
+export default function generateTextJoinOneConditionFilterFormula() {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -10,8 +10,9 @@ export default function generateTextJoinUniqueFilterFormula() {
     { key: "SourceSheet", question: "Tên sheet dữ liệu gốc: " },
     { key: "DataColumnRef", question: "Sheet dữ liệu gốc: Cột chứa giá trị cần join (vd: E): " },
     { key: "CriteriaColumnRef", question: "Sheet dữ liệu gốc: Cột điều kiện (vd: A): " },
-    { key: "CriteriaValue", question: "Sheet hiển thị: Giá trị filter theo cột (vd: B4): " },
-    { key: "StartRow", question: "Dòng bắt đầu dữ liệu (vd: 4): " },
+    { key: "CriteriaValue", question: "Sheet hiển thị: Ô giá trị filter (vd: B4): " },
+    { key: "StartRowSource", question: "Sheet dữ liệu gốc: Dòng bắt đầu dữ liệu (vd: 4): " },
+    { key: "StartRowDisplay", question: "Sheet hiển thị: Dòng bắt đầu dữ liệu (vd: 4): " },
     { key: "Delimiter", question: "Ký tự phân cách khi nối chuỗi (vd: \", \"): " },
   ];
 
@@ -31,10 +32,10 @@ export default function generateTextJoinUniqueFilterFormula() {
   function ask(index) {
     if (index === questions.length) {
       const sheet = answers.SourceSheet;
-      const dataCol = toRange(answers.DataColumnRef, answers.StartRow);
-      const critCol = toRange(answers.CriteriaColumnRef, answers.StartRow);
+      const dataCol = toRange(answers.DataColumnRef, answers.StartRowSource);
+      const critCol = toRange(answers.CriteriaColumnRef, answers.StartRowSource);
       const delimiter = quoteIfString(answers.Delimiter);
-      const critVal = answers.CriteriaValue;
+      const critVal = answers.CriteriaValue; // ô tham chiếu trên sheet hiển thị
 
       const formula = `=TEXTJOIN(${delimiter}; TRUE; UNIQUE(FILTER('${sheet}'!${dataCol}; '${sheet}'!${critCol}=${critVal}; "")))`;
 

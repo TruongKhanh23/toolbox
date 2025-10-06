@@ -1,6 +1,6 @@
 import readline from "readline";
 
-export default function generateTextJoinFilterFormula() {
+export default function generateTextJoinTwoConditionFilterFormula() {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
