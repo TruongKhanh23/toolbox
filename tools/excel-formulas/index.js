@@ -7,6 +7,9 @@ import conditionalFormattingCellWithoutString from "./conditional-formatting-wit
 import generateTextJoinOneConditionFilterFormula from "./generate-text-join-one-condition-filter-formula.js"
 import generateAutoSerialNumberFormula from "./auto-generate-serial-number.js";
 import generateConditionalFormattingEmptyCell from "./conditional-formatting-empty-cell.js";
+import generateIndirectReplaceFormula from "./generate-indirect-replace-formula.js";
+import generateColumnFormula from "./generate-get-column-formula.js";
+import generatePriorityNamedFormulas from "./generate-priority-named-formula.js";
 
 export default {
   1: conditionalFormatingDuplicateValue,
@@ -18,4 +21,7 @@ export default {
   7: generateTextJoinOneConditionFilterFormula,
   8: generateAutoSerialNumberFormula,
   9: generateConditionalFormattingEmptyCell,
+  10: generateIndirectReplaceFormula,
+  11: generateColumnFormula,
+  12: generatePriorityNamedFormulas,
 };

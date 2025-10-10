@@ -1,0 +1,4 @@
+Category_Out_of_analyse_scope
+Category_Branch_Main_Has_No_Source_Code
+Category_Last_Commit_Author_has_left_the_company
+Category_No_activity_for_more_than_a_year
