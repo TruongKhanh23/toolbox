@@ -6,55 +6,106 @@ export default function generateValidationVersionFormula() {
     output: process.stdout,
   });
 
-  rl.question("Nhập ô muốn áp dụng (ví dụ A1): ", (cellInput) => {
-    const cell = cellInput.trim() || "A1";
+  // --- Câu hỏi 1: Các pattern đặc biệt (IsSpecial)
+  rl.question(
+    "Nhập các trường hợp đặc biệt cho hàm IsSpecial (ví dụ: ES,ksh): ",
+    (specialInput) => {
+      const specials = specialInput
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean);
 
-    rl.question(
-      "Nhập các ký tự bắt đầu cho Part4 (ví dụ -+~): ",
-      (charsInput) => {
-        const part4Chars = charsInput.trim() || "-+";
+      // --- Câu hỏi 2: Ký tự đặc biệt dùng trong PosChar
+      rl.question(
+        "Nhập các ký tự đặc biệt cho hàm PosChar (ví dụ: -+~): ",
+        (charsInput) => {
+          const chars = charsInput.trim().split("").filter(Boolean);
 
-        const formulas = generateFormulas(cell, part4Chars);
+          // --- Câu hỏi 3: Ô muốn áp dụng
+          rl.question(
+            "Nhập ô muốn áp dụng (ví dụ: Sheet1!A1): ",
+            (cellInput) => {
+              const cell = cellInput.trim() || "Sheet1!A1";
 
-        console.log("\n--- Các Named Formula được tạo ---");
-        for (const [name, formula] of Object.entries(formulas)) {
-          console.log(`${name}: ${formula}`);
+              const formulas = generateFormulas(cell, chars, specials);
+
+              console.log("\n--- ✅ Các Named Formula được tạo ---\n");
+              for (const [name, formula] of Object.entries(formulas)) {
+                console.log(`${name}: ${formula}\n`);
+              }
+
+              rl.close();
+            }
+          );
         }
+      );
+    }
+  );
 
-        rl.close();
-      }
-    );
-  });
+  // --- Hàm sinh công thức ---
+  function generateFormulas(cell, chars, specials) {
+    const formulas = {};
 
-  function generateFormulas(cell, part4Chars) {
-    // Tách ký tự đặc biệt ra mảng
-    const chars = part4Chars.split("");
+    formulas.DotCount = `=LEN(${cell})-LEN(SUBSTITUTE(${cell};".";""))`;
 
-    // Tạo Part4Full: toàn bộ phần sau dấu chấm thứ 3
-    const formulas = {
-      Part1: `=--LEFT(${cell};FIND("." ;${cell})-1)`,
-      Part2: `=--MID(${cell};FIND("." ;${cell})+1;IFERROR(FIND("." ;${cell};FIND("." ;${cell})+1)-FIND("." ;${cell})-1;99))`,
-      Part3: `=--MID(${cell};FIND("." ;${cell};FIND("." ;${cell})+1)+1;IFERROR(FIND("." ;${cell};FIND("." ;${cell};FIND("." ;${cell})+1)+1)-FIND("." ;${cell};FIND("." ;${cell})+1)-1;99))`,
-      Part4Full: `=MID(${cell};FIND("." ;${cell};FIND("." ;${cell};FIND("." ;${cell})+1)+1)+1;99)`,
-    };
+    formulas.Part1 = `=--LEFT(${cell};FIND("." ;${cell})-1)`;
 
-    // Tạo Named Formula cho từng ký tự đặc biệt
-    chars.forEach((c, index) => {
-      formulas[`PosChar${index + 1}`] = `=IFERROR(FIND("${c}"; Part4Full); 99)`;
+    formulas.Part2 = `=--MID(${cell};FIND("." ;${cell})+1;IFERROR(FIND("." ;${cell};FIND("." ;${cell})+1)-FIND("." ;${cell})-1;99))`;
+
+    formulas.Part3 = `=IF(DotCount>=2;
+   IFERROR(VALUE(LEFT(MID(${cell};
+     FIND("." ;${cell};FIND("." ;${cell})+1)+1;99);
+     MIN(
+       IFERROR(FIND("-";MID(${cell};FIND("." ;${cell};FIND("." ;${cell})+1)+1;99));99);
+       IFERROR(FIND("+";MID(${cell};FIND("." ;${cell};FIND("." ;${cell})+1)+1;99));99);
+       IFERROR(FIND("." ;MID(${cell};FIND("." ;${cell};FIND("." ;${cell})+1)+1;99));99)
+     )-1
+   ));"");
+   "")`;
+
+    formulas.Part4Full = `=IF(DotCount>=3;
+   MID(${cell};
+     FIND("." ;${cell};FIND("." ;${cell};FIND("." ;${cell})+1)+1)+1;99);
+   "")`;
+
+    // --- Các hàm PosChar theo ký tự nhập ---
+    chars.forEach((c, i) => {
+      formulas[`PosChar${i + 1}`] = `=IF(Part4Full<>"";IFERROR(FIND("${c}";Part4Full);99);99)`;
     });
 
-    // Tạo Part4: lấy số trước ký tự xuất hiện sớm nhất
-    if (chars.length === 1) {
-      formulas.Part4 = `=--LEFT(Part4Full; PosChar1-1)`;
+    const posList = chars.map((_, i) => `PosChar${i + 1}`).join("; ");
+    formulas.Part4 = `=IF(Part4Full<>"";--LEFT(Part4Full;MIN(${posList})-1);"")`;
+
+    // --- Hàm IsSpecial ---
+    if (specials.length > 0) {
+      const specialClauses = specials
+        .map((s) => {
+          const prefixLen = s.length;
+          return `AND(LEFT(${cell};${prefixLen})="${s}";ISNUMBER(--MID(${cell};${
+            prefixLen + 1
+          };99)))`;
+        })
+        .join("; ");
+      formulas.IsSpecial = `=OR(${specialClauses})`;
     } else {
-      // Lấy MIN của tất cả PosChar để xác định ký tự xuất hiện đầu tiên
-      const posList = chars.map((_, i) => `PosChar${i + 1}`).join("; ");
-      formulas.Part4 = `=--LEFT(Part4Full; MIN(${posList})-1)`;
+      formulas.IsSpecial = `=FALSE`;
     }
 
-    // Công thức kiểm tra cuối cùng
-    formulas.FinalCheck = `=AND(ISNUMBER(Part1); ISNUMBER(Part2); ISNUMBER(Part3); ISNUMBER(Part4))`;
+    // --- Hàm IsSemVerValid ---
+    formulas.IsSemVerValid = `=AND(
+  ISNUMBER(Part1);
+  ISNUMBER(Part2);
+  OR(ISNUMBER(Part3);DotCount=1)
+)`;
+
+    // --- Hàm FinalCheck ---
+    formulas.FinalCheck = `=OR(IsSpecial;IsSemVerValid)`;
 
     return formulas;
   }
+}
+
+// Gọi hàm nếu chạy trực tiếp bằng Node
+if (process.argv[1] && process.argv[1].includes("generateValidationVersionFormula.js")) {
+  generateValidationVersionFormula();
 }
