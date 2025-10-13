@@ -1,0 +1,29 @@
+DotCount
+=LEN(Sheet1!A1)-LEN(SUBSTITUTE(Sheet1!A1;".";""))
+
+Part1
+=--LEFT(Sheet1!A1;FIND(".";Sheet1!A1)-1)
+
+Part2
+=--MID(Sheet1!A1;FIND(".";Sheet1!A1)+1;IFERROR(FIND(".";Sheet1!A1;FIND(".";Sheet1!A1)+1)-FIND(".";Sheet1!A1)-1;99))
+
+Part3
+=IF(DotCount>=2;   IFERROR(     VALUE(       LEFT(         MID(Sheet1!A1;FIND(".";Sheet1!A1;FIND(".";Sheet1!A1)+1)+1;99);         MIN(           IFERROR(FIND("-";MID(Sheet1!A1;FIND(".";Sheet1!A1;FIND(".";Sheet1!A1)+1)+1;99));99);           IFERROR(FIND("+";MID(Sheet1!A1;FIND(".";Sheet1!A1;FIND(".";Sheet1!A1)+1)+1;99));99);           IFERROR(FIND(".";MID(Sheet1!A1;FIND(".";Sheet1!A1;FIND(".";Sheet1!A1)+1)+1;99));99)         )-1       )     );     ""   );   "" )
+
+Part4
+=IF(Part4Full<>""; --LEFT(Part4Full; MIN(PosChar1; PosChar2; PosChar3)-1); "")
+
+Part4Full
+=IF(DotCount>=3;   MID(Sheet1!A1;FIND(".";Sheet1!A1;FIND(".";Sheet1!A1;FIND(".";Sheet1!A1)+1)+1)+1;99);   "")
+
+PosChar1
+=IF(Part4Full<>""; IFERROR(FIND("-"; Part4Full); 99); 99)
+
+PosChar2
+=IF(Part4Full<>""; IFERROR(FIND("+"; Part4Full); 99); 99)
+
+PosChar3
+=IF(Part4Full<>""; IFERROR(FIND("."; Part4Full); 99); 99)
+
+FinalCheck
+=AND(ISNUMBER(Part1); ISNUMBER(Part2); OR(ISNUMBER(Part3); DotCount=1); OR(ISNUMBER(Part4); DotCount<=2))
