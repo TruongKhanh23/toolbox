@@ -40,16 +40,19 @@ export default function generatePriorityNamedFormula() {
     }
 
     // Tạo công thức IF lồng nhau
-    let formulaString = "";
+    // Tạo công thức IF lồng nhau, thêm fallback "Wait for analyse"
+    let formulaString = "=IF(";
     for (let i = 0; i < formulas.length; i++) {
-      if (i === 0) {
-        formulaString = `=IF(${formulas[i]}<>""; ${formulas[i]};`;
-      } else if (i < formulas.length - 1) {
-        formulaString += `\n    IF(${formulas[i]}<>""; ${formulas[i]};`;
+      const f = formulas[i];
+      if (i < formulas.length - 1) {
+        formulaString += `${f}<>""; ${f}; IF(`; // mở thêm IF mới
       } else {
-        formulaString += `\n       ${formulas[i]}` + ")".repeat(formulas.length - 1);
+        // Cuối cùng: nếu tất cả đều rỗng → "Wait for analyse"
+        formulaString += `${f}<>""; ${f}; "Wait for analyse"`;
       }
     }
+    // Đóng đủ dấu ngoặc )
+    formulaString += ")".repeat(formulas.length);
 
     console.log("Công thức Excel được generate:");
     console.log(formulaString);
