@@ -10,6 +10,7 @@ import generateConditionalFormattingEmptyCell from "./conditional-formatting-emp
 import generateIndirectReplaceFormula from "./generate-indirect-replace-formula.js";
 import generateColumnFormula from "./generate-get-column-formula.js";
 import generatePriorityNamedFormulas from "./generate-priority-named-formula.js";
+import generateValidationVersionFormula from "./generate-validation-version-formula.js";
 
 export default {
   1: conditionalFormatingDuplicateValue,
@@ -24,4 +25,5 @@ export default {
   10: generateIndirectReplaceFormula,
   11: generateColumnFormula,
   12: generatePriorityNamedFormulas,
+  13: generateValidationVersionFormula,
 };
