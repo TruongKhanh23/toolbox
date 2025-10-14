@@ -11,6 +11,7 @@ import generateIndirectReplaceFormula from "./generate-indirect-replace-formula.
 import generateColumnFormula from "./generate-get-column-formula.js";
 import generatePriorityNamedFormulas from "./generate-priority-named-formula.js";
 import generateValidationVersionFormula from "./generate-validation-version-formula.js";
+import generateBasicVlookup from "./generate-basic-vlookup.js";
 
 export default {
   1: conditionalFormatingDuplicateValue,
@@ -26,4 +27,5 @@ export default {
   11: generateColumnFormula,
   12: generatePriorityNamedFormulas,
   13: generateValidationVersionFormula,
+  14: generateBasicVlookup,
 };
