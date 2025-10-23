@@ -13,6 +13,7 @@ import generatePriorityNamedFormulas from "./generate-priority-named-formula.js"
 import generateValidationVersionFormula from "./generate-validation-version-formula.js";
 import generateBasicVlookup from "./generate-basic-vlookup.js";
 import conditionalFormattingByString from "./conditional-formatting-by-string.js";
+import generateCountifFormula from "./generate-countif-formula.js";
 
 export default {
   1: conditionalFormatingDuplicateValue,
@@ -30,4 +31,5 @@ export default {
   13: generateValidationVersionFormula,
   14: generateBasicVlookup,
   15: conditionalFormattingByString,
+  16: generateCountifFormula,
 };
