@@ -81,6 +81,9 @@ Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.BaseName -ne "S
     }
 }
 
+# Auto-fit tất cả cột đã sử dụng
+$wsOut.UsedRange.Columns.AutoFit()
+
 # Lưu và đóng file tổng hợp
 $wbOut.SaveAs($outputFile)
 $wbOut.Close()
