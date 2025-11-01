@@ -1,6 +1,7 @@
-# merge_shopee.ps1
-# PowerShell script tổng hợp dữ liệu SHOPEE từ nhiều file Excel
-# Giữ việc nhập dòng bắt đầu/kết thúc + debug messages + hỏi tên sheet
+# merge_data.ps1
+# PowerShell script tổng hợp dữ liệu Excel từ nhiều file
+# Hỏi dòng bắt đầu/kết thúc, sheet, kênh, loại dữ liệu
+# Tự tạo tên file tổng hợp dựa trên lựa chọn người dùng và tháng từ file đầu tiên
 
 # Hỏi người dùng dòng bắt đầu và kết thúc
 $startRow = Read-Host "Nhap dong du lieu bat dau"
@@ -9,11 +10,51 @@ $endRow = Read-Host "Nhap dong du lieu ket thuc"
 # Hỏi tên sheet
 $sheetName = Read-Host "Nhap ten sheet can xu ly"
 
+# --- Chọn kênh ---
+$channels = @("ZALOPAY","SHOPEE","GRAB","XANHSM","VILL","RYO","TIEN_MAT","BE", "VNPAY")
+Write-Host "`nBan dang xu ly cho kenh nao?"
+for ($i=0; $i -lt $channels.Count; $i++) {
+    Write-Host "$($i+1). $($channels[$i])"
+}
+do {
+    $channelIndex = Read-Host "Nhap so tuong ung (1-$($channels.Count))"
+} while (-not ($channelIndex -as [int]) -or $channelIndex -lt 1 -or $channelIndex -gt $channels.Count)
+$channel = $channels[$channelIndex - 1]
+Write-Host "Ban chon kenh: $channel"
+
+# --- Chọn loại dữ liệu ---
+$dataTypes = @("DOANH_THU","CHI_PHI")
+Write-Host "`nBan dang xu ly LOAI DU LIEU nao?"
+for ($i=0; $i -lt $dataTypes.Count; $i++) {
+    Write-Host "$($i+1). $($dataTypes[$i])"
+}
+do {
+    $dataTypeIndex = Read-Host "Nhap so tuong ung (1-2)"
+} while (-not ($dataTypeIndex -as [int]) -or $dataTypeIndex -lt 1 -or $dataTypeIndex -gt 2)
+$dataType = $dataTypes[$dataTypeIndex - 1]
+Write-Host "Ban chon loai du lieu: $dataType"
+
 # Lấy folder hiện tại (nơi chứa script)
 $folder = $PSScriptRoot
-$outputFile = Join-Path $folder "Tien_Da_Ve_Tai_Khoan_CTY_Shopee.xlsx"
 
-# Tạo Excel COM object
+# Lấy file đầu tiên trong folder
+$firstFile = Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.BaseName -ne "SHOPEE_Merged" } | Select-Object -First 1
+if (-not $firstFile) {
+    Write-Host "Khong tim thay file Excel nao trong folder!"
+    exit
+}
+
+# Lấy mm.yyyy từ tên file đầu tiên
+$dateParts = $firstFile.BaseName -split '\.'  # ["dd","mm","yyyy"]
+$monthYear = "$($dateParts[1]).$($dateParts[2])"
+$thangPart = "THANG_$monthYear"
+
+# Tạo tên file tổng hợp dựa trên kênh, loại dữ liệu, và tháng
+$outputFileName = "${dataType}_${channel}_${thangPart}.xlsx"
+$outputFile = Join-Path $folder $outputFileName
+Write-Host "`nFile tong hop se duoc tao: $outputFile`n"
+
+# --- Tạo Excel COM object ---
 $excel = New-Object -ComObject Excel.Application
 $excel.Visible = $false
 $excel.DisplayAlerts = $false
@@ -29,13 +70,17 @@ $wsOut.Cells.Item(1,3) = "So tien"
 
 $rowOut = 2
 
-# Lặp qua tất cả file Excel trong folder (không phải file tổng hợp)
-Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.BaseName -ne "SHOPEE_Merged" } | ForEach-Object {
+# --- Lặp qua tất cả file Excel trong folder (không phải file tổng hợp) ---
+Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.FullName -ne $outputFile } | ForEach-Object {
     $file = $_.FullName
     $fileName = $_.BaseName
 
     # Chuyển dd.mm.yyyy -> DateTime
     $dateParts = $fileName -split '\.'  # ["dd","mm","yyyy"]
+    if ($dateParts.Count -ne 3) { 
+        Write-Host "Ten file $fileName khong dung dinh dang dd.mm.yyyy.xlsx, bo qua"
+        return
+    }
     $day = [int]$dateParts[0]
     $month = [int]$dateParts[1]
     $year = [int]$dateParts[2]
@@ -88,5 +133,5 @@ $wbOut.SaveAs($outputFile)
 $wbOut.Close()
 $excel.Quit()
 
-Write-Host "Da tao file tong hop:" $outputFile
+Write-Host "`nDa tao file tong hop:" $outputFile
 Pause
