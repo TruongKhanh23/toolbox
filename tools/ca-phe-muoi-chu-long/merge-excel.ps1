@@ -12,7 +12,7 @@ $endRow = Read-Host "Nhap dong du lieu ket thuc"
 $sheetName = Read-Host "Nhap ten sheet can xu ly"
 
 # --- Chọn kênh ---
-$channels = @("ZALOPAY","SHOPEE","GRAB","XANHSM","VILL","RYO","TIEN_MAT","BE", "VNPAY")
+$channels = @("ZALOPAY","SHOPEE","GRAB","XANHSM","VILL","RYO","TIEN_MAT","BE", "VNPAY", "MOMO")
 Write-Host "`nBan dang xu ly cho kenh nao?"
 for ($i=0; $i -lt $channels.Count; $i++) {
     Write-Host "$($i+1). $($channels[$i])"
