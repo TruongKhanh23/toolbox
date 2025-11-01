@@ -8,7 +8,7 @@ $endRow = Read-Host "Nhap dong du lieu ket thuc"
 
 # Lấy folder hiện tại (nơi chứa script)
 $folder = $PSScriptRoot
-$outputFile = Join-Path $folder "SHOPEE_Merged.xlsx"
+$outputFile = Join-Path $folder "Tien_Da_Ve_Tai_Khoan_CTY_Shopee.xlsx"
 
 # Tạo Excel COM object
 $excel = New-Object -ComObject Excel.Application
