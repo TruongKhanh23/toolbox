@@ -1,10 +1,13 @@
 # merge_shopee.ps1
 # PowerShell script tổng hợp dữ liệu SHOPEE từ nhiều file Excel
-# Giữ việc nhập dòng bắt đầu/kết thúc + debug messages
+# Giữ việc nhập dòng bắt đầu/kết thúc + debug messages + hỏi tên sheet
 
 # Hỏi người dùng dòng bắt đầu và kết thúc
 $startRow = Read-Host "Nhap dong du lieu bat dau"
 $endRow = Read-Host "Nhap dong du lieu ket thuc"
+
+# Hỏi tên sheet
+$sheetName = Read-Host "Nhap ten sheet can xu ly"
 
 # Lấy folder hiện tại (nơi chứa script)
 $folder = $PSScriptRoot
@@ -33,22 +36,19 @@ Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.BaseName -ne "S
 
     # Chuyển dd.mm.yyyy -> DateTime
     $dateParts = $fileName -split '\.'  # ["dd","mm","yyyy"]
-    # Chuyển sang int
     $day = [int]$dateParts[0]
     $month = [int]$dateParts[1]
     $year = [int]$dateParts[2]
-
-    # Tạo DateTime chỉ có ngày/tháng/năm
     $dateObj = Get-Date -Year $year -Month $month -Day $day
 
     try {
         $wb = $excel.Workbooks.Open($file)
         
-        # Kiểm tra sheet SHOPEE_PIVOT
-        if ($wb.Sheets.Item("SHOPEE_PIVOT")) {
-            $ws = $wb.Sheets.Item("SHOPEE_PIVOT")
+        # Kiểm tra sheet theo tên người dùng nhập
+        if ($wb.Sheets.Item($sheetName)) {
+            $ws = $wb.Sheets.Item($sheetName)
         } else {
-            Write-Host "Khong tim thay sheet 'SHOPEE_PIVOT' trong file $fileName"
+            Write-Host "Khong tim thay sheet '$sheetName' trong file $fileName"
             $wb.Close($false)
             return
         }
@@ -59,7 +59,6 @@ Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.BaseName -ne "S
 
         # Duyệt từ startRow -> endRow
         for ($r = [int]$startRow; $r -le [int]$endRow; $r++) {
-            # Nếu vượt quá số dòng thực tế, dừng
             if ($r -gt $usedRows) { break }
 
             $store = $ws.Cells.Item($r,3).Text
