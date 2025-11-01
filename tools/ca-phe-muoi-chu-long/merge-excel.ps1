@@ -1,10 +1,9 @@
 # merge_data.ps1
-# PowerShell script tổng hợp dữ liệu Excel từ nhiều file
-# Hỏi dòng bắt đầu/kết thúc, sheet, kênh, loại dữ liệu
-# Hỏi cột cần lấy (Store, Amount)
-# Tự tạo tên file tổng hợp dựa trên lựa chọn người dùng và tháng từ file đầu tiên
+# Phiên bản hoàn chỉnh (fix chọn kênh, fix đọc nhiều cột)
+# Tác giả: ChatGPT (GPT-5)
+# Ngày cập nhật: 01/11/2025
 
-# --- Hỏi người dùng dòng bắt đầu và kết thúc ---
+# --- Hỏi dòng bắt đầu và kết thúc ---
 $startRow = Read-Host "Nhap dong du lieu bat dau"
 $endRow = Read-Host "Nhap dong du lieu ket thuc"
 
@@ -12,14 +11,19 @@ $endRow = Read-Host "Nhap dong du lieu ket thuc"
 $sheetName = Read-Host "Nhap ten sheet can xu ly"
 
 # --- Chọn kênh ---
-$channels = @("ZALOPAY","SHOPEE","GRAB","XANHSM","VILL","RYO","TIEN_MAT","BE", "VNPAY", "MOMO")
+$channels = @("ZALOPAY","SHOPEE","GRAB","XANHSM","VILL","RYO","TIEN_MAT","BE","VNPAY","MOMO")
 Write-Host "`nBan dang xu ly cho kenh nao?"
 for ($i=0; $i -lt $channels.Count; $i++) {
     Write-Host "$($i+1). $($channels[$i])"
 }
 do {
-    $channelIndex = Read-Host "Nhap so tuong ung (1-$($channels.Count))"
-} while (-not ($channelIndex -as [int]) -or $channelIndex -lt 1 -or $channelIndex -gt $channels.Count)
+    $channelIndexStr = Read-Host "Nhap so tuong ung (1-$($channels.Count))"
+    if ($channelIndexStr -match '^\d+$') {
+        $channelIndex = [int]$channelIndexStr
+    } else {
+        $channelIndex = 0
+    }
+} while ($channelIndex -lt 1 -or $channelIndex -gt $channels.Count)
 $channel = $channels[$channelIndex - 1]
 Write-Host "Ban chon kenh: $channel"
 
@@ -30,19 +34,23 @@ for ($i=0; $i -lt $dataTypes.Count; $i++) {
     Write-Host "$($i+1). $($dataTypes[$i])"
 }
 do {
-    $dataTypeIndex = Read-Host "Nhap so tuong ung (1-2)"
-} while (-not ($dataTypeIndex -as [int]) -or $dataTypeIndex -lt 1 -or $dataTypeIndex -gt 2)
+    $dataTypeStr = Read-Host "Nhap so tuong ung (1-2)"
+    if ($dataTypeStr -match '^\d+$') {
+        $dataTypeIndex = [int]$dataTypeStr
+    } else {
+        $dataTypeIndex = 0
+    }
+} while ($dataTypeIndex -lt 1 -or $dataTypeIndex -gt $dataTypes.Count)
 $dataType = $dataTypes[$dataTypeIndex - 1]
 Write-Host "Ban chon loai du lieu: $dataType"
 
-# --- Hỏi cột cần lấy ---
+# --- Hàm chuyển chữ cái sang số cột ---
 function Get-ColumnNumber($prompt) {
     do {
         $input = Read-Host $prompt
         if ($input -match '^[A-Z]+$') {
-            # Chuyển chữ thành số cột (A=1, B=2,...)
             $colNum = 0
-            $letters = $input.ToCharArray()
+            $letters = $input.ToUpper().ToCharArray()
             foreach ($ch in $letters) {
                 $colNum = $colNum * 26 + ([int][char]$ch - [int][char]'A' + 1)
             }
@@ -55,26 +63,46 @@ function Get-ColumnNumber($prompt) {
     return $colNum
 }
 
-$colStore = Get-ColumnNumber "Nhap cot chua Ten cua hang (chu cai hoac so, VD: C hoac 3)"
-$colAmount = Get-ColumnNumber "Nhap cot chua So tien (chu cai hoac so, VD: D hoac 4)"
-Write-Host "Ban chon cot Store: $colStore, cot Amount: $colAmount"
+# --- Hỏi số lượng cột ---
+do {
+    $colCount = Read-Host "Nhap so luong cot muon lay (VD: 2, 3, 5...)"
+} while (-not ($colCount -as [int]) -or $colCount -lt 1)
+$colCount = [int]$colCount
 
-# --- Lấy folder hiện tại ---
+# --- Hỏi từng cột ---
+$columns = @()
+for ($i=1; $i -le $colCount; $i++) {
+    $colLetter = Get-ColumnNumber "Nhap cot thu $i (VD: C hoac 3)"
+    $colName = Read-Host "Nhap ten cho cot thu $i (VD: Ten cua hang, So tien, Ma don...)"
+    $columns += [PSCustomObject]@{
+        Name = $colName
+        Index = $colLetter
+    }
+}
+
+Write-Host "`nBan da chon cac cot:"
+$columns | ForEach-Object { Write-Host " - $($_.Name): Cot $($_.Index)" }
+
+# --- Folder hiện tại ---
 $folder = $PSScriptRoot
 
-# --- Lấy file đầu tiên trong folder ---
-$firstFile = Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.BaseName -ne "SHOPEE_Merged" } | Select-Object -First 1
+# --- Lấy file đầu tiên ---
+$firstFile = Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.BaseName -notmatch "_Merged$" } | Select-Object -First 1
 if (-not $firstFile) {
     Write-Host "Khong tim thay file Excel nao trong folder!"
     exit
 }
 
-# --- Lấy mm.yyyy từ tên file đầu tiên ---
-$dateParts = $firstFile.BaseName -split '\.'  # ["dd","mm","yyyy"]
-$monthYear = "$($dateParts[1]).$($dateParts[2])"
+# --- Xác định tháng ---
+$dateParts = $firstFile.BaseName -split '\.'
+if ($dateParts.Count -ge 3) {
+    $monthYear = "$($dateParts[1]).$($dateParts[2])"
+} else {
+    $monthYear = (Get-Date -Format "MM.yyyy")
+}
 $thangPart = "THANG_$monthYear"
 
-# --- Tạo tên file tổng hợp ---
+# --- Tên file tổng hợp ---
 $outputFileName = "${dataType}_${channel}_${thangPart}.xlsx"
 $outputFile = Join-Path $folder $outputFileName
 Write-Host "`nFile tong hop se duoc tao: $outputFile`n"
@@ -84,26 +112,25 @@ $excel = New-Object -ComObject Excel.Application
 $excel.Visible = $false
 $excel.DisplayAlerts = $false
 
-# --- Tạo workbook mới để lưu kết quả ---
+# --- Workbook output ---
 $wbOut = $excel.Workbooks.Add()
 $wsOut = $wbOut.Sheets.Item(1)
 
-# --- Ghi header ---
+# --- Header ---
 $wsOut.Cells.Item(1,1) = "Ngay"
-$wsOut.Cells.Item(1,2) = "Ten cua hang"
-$wsOut.Cells.Item(1,3) = "So tien"
-
+for ($i=0; $i -lt $columns.Count; $i++) {
+    $wsOut.Cells.Item(1, $i + 2) = $columns[$i].Name
+}
 $rowOut = 2
 
-# --- Lặp qua tất cả file Excel trong folder (không phải file tổng hợp) ---
+# --- Duyệt tất cả file ---
 Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.FullName -ne $outputFile } | ForEach-Object {
     $file = $_.FullName
     $fileName = $_.BaseName
 
-    # Chuyển dd.mm.yyyy -> DateTime
-    $dateParts = $fileName -split '\.'  # ["dd","mm","yyyy"]
-    if ($dateParts.Count -ne 3) { 
-        Write-Host "Ten file $fileName khong dung dinh dang dd.mm.yyyy.xlsx, bo qua"
+    $dateParts = $fileName -split '\.'
+    if ($dateParts.Count -ne 3) {
+        Write-Host "Bo qua $fileName (ten khong dung dd.mm.yyyy)"
         return
     }
     $day = [int]$dateParts[0]
@@ -113,50 +140,47 @@ Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.FullName -ne $o
 
     try {
         $wb = $excel.Workbooks.Open($file)
-        
-        # Kiểm tra sheet theo tên người dùng nhập
-        if ($wb.Sheets.Item($sheetName)) {
-            $ws = $wb.Sheets.Item($sheetName)
-        } else {
-            Write-Host "Khong tim thay sheet '$sheetName' trong file $fileName"
-            $wb.Close($false)
-            return
-        }
-
-        # Lấy số dòng thực tế có dữ liệu
+        $ws = $wb.Sheets.Item($sheetName)
+        $null = $ws.UsedRange.Value2   # kích hoạt UsedRange
         $usedRows = $ws.UsedRange.Rows.Count
-        Write-Host "Dang xu ly file: $fileName, so dong co du lieu: $usedRows"
+        Write-Host "Dang xu ly: $fileName ($usedRows dong du lieu)"
 
-        # Duyệt từ startRow -> endRow
         for ($r = [int]$startRow; $r -le [int]$endRow; $r++) {
             if ($r -gt $usedRows) { break }
 
-            $store = $ws.Cells.Item($r, $colStore).Text
-            $amount = $ws.Cells.Item($r, $colAmount).Value2
+            $hasData = $false
+            $rowValues = @()
+            foreach ($col in $columns) {
+                $cell = $ws.Cells.Item($r, $col.Index)
+                $val = $cell.Value2
+                if ($null -eq $val -or $val -eq "") {
+                    $val = $cell.Text
+                }
+                $rowValues += $val
+                if ($val -ne "") { $hasData = $true }
+            }
 
-            if ($store -ne "") {
+            if ($hasData) {
                 $wsOut.Cells.Item($rowOut,1) = $dateObj
                 $wsOut.Cells.Item($rowOut,1).NumberFormat = "dd/mm/yyyy"
-                $wsOut.Cells.Item($rowOut,2) = $store
-                $wsOut.Cells.Item($rowOut,3) = $amount
+                for ($i=0; $i -lt $rowValues.Count; $i++) {
+                    $wsOut.Cells.Item($rowOut, $i + 2) = $rowValues[$i]
+                }
                 $rowOut++
             }
         }
 
-        Write-Host "Da xu ly dong $startRow -> $([math]::Min($endRow,$usedRows)) trong file $fileName"
+        Write-Host "→ Da xu ly xong $fileName"
         $wb.Close($false)
     } catch {
-        Write-Host "Khong the mo file $fileName"
+        Write-Host "⚠️ Loi khi mo file $fileName"
     }
 }
 
-# --- Auto-fit tất cả cột đã sử dụng ---
 $wsOut.UsedRange.Columns.AutoFit()
-
-# --- Lưu và đóng file tổng hợp ---
 $wbOut.SaveAs($outputFile)
 $wbOut.Close()
 $excel.Quit()
 
-Write-Host "`nDa tao file tong hop:" $outputFile
+Write-Host "`n✅ Da tao file tong hop:" $outputFile
 Pause
