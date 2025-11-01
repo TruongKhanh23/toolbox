@@ -14,6 +14,7 @@ import generateValidationVersionFormula from "./generate-validation-version-form
 import generateBasicVlookup from "./generate-basic-vlookup.js";
 import conditionalFormattingByString from "./conditional-formatting-by-string.js";
 import generateJsonFromExcelStructure from "./generate-json-from-excel-structure.js";
+import generateCountifFormula from "./generate-countif-formula.js";
 
 export default {
   1: conditionalFormatingDuplicateValue,
@@ -32,4 +33,5 @@ export default {
   14: generateBasicVlookup,
   15: conditionalFormattingByString,
   16: generateJsonFromExcelStructure,
+  17: generateCountifFormula,
 };
