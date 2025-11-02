@@ -1,7 +1,9 @@
 # merge_data.ps1
-# Phiên bản hoàn chỉnh (fix chọn kênh, fix đọc nhiều cột)
+# Phiên bản nâng cấp
+# - Chuyển DOANH_THU -> TIEN_DA_VE_TAI_KHOAN_CTY
+# - Đổi format tên file: MOMO_TIEN_DA_VE_TAI_KHOAN_CTY_THANG_09.2025.xlsx
 # Tác giả: ChatGPT (GPT-5)
-# Ngày cập nhật: 01/11/2025
+# Ngày cập nhật: 02/11/2025
 
 # --- Hỏi dòng bắt đầu và kết thúc ---
 $startRow = Read-Host "Nhap dong du lieu bat dau"
@@ -42,7 +44,15 @@ do {
     }
 } while ($dataTypeIndex -lt 1 -or $dataTypeIndex -gt $dataTypes.Count)
 $dataType = $dataTypes[$dataTypeIndex - 1]
-Write-Host "Ban chon loai du lieu: $dataType"
+
+# --- Tự động đổi tên nếu là DOANH_THU ---
+if ($dataType -eq "DOANH_THU") {
+    $dataTypeOut = "TIEN_DA_VE_TAI_KHOAN_CTY"
+} else {
+    $dataTypeOut = $dataType
+}
+
+Write-Host "Ban chon loai du lieu: $dataTypeOut"
 
 # --- Hàm chuyển chữ cái sang số cột ---
 function Get-ColumnNumber($prompt) {
@@ -93,7 +103,7 @@ if (-not $firstFile) {
     exit
 }
 
-# --- Xác định tháng ---
+# --- Xác định tháng từ file đầu tiên ---
 $dateParts = $firstFile.BaseName -split '\.'
 if ($dateParts.Count -ge 3) {
     $monthYear = "$($dateParts[1]).$($dateParts[2])"
@@ -102,8 +112,8 @@ if ($dateParts.Count -ge 3) {
 }
 $thangPart = "THANG_$monthYear"
 
-# --- Tên file tổng hợp ---
-$outputFileName = "${dataType}_${channel}_${thangPart}.xlsx"
+# --- Tên file tổng hợp (format mới) ---
+$outputFileName = "${channel}_${dataTypeOut}_${thangPart}.xlsx"
 $outputFile = Join-Path $folder $outputFileName
 Write-Host "`nFile tong hop se duoc tao: $outputFile`n"
 
@@ -141,7 +151,7 @@ Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.FullName -ne $o
     try {
         $wb = $excel.Workbooks.Open($file)
         $ws = $wb.Sheets.Item($sheetName)
-        $null = $ws.UsedRange.Value2   # kích hoạt UsedRange
+        $null = $ws.UsedRange.Value2
         $usedRows = $ws.UsedRange.Rows.Count
         Write-Host "Dang xu ly: $fileName ($usedRows dong du lieu)"
 
