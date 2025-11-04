@@ -6,7 +6,6 @@ export default function generateColumnFormula() {
     output: process.stdout,
   });
 
-  // 🟢 Bước 1: Hỏi tên sheet dữ liệu gốc
   rl.question("Nhập tên sheet dữ liệu gốc (ví dụ: Raw Data): ", function handleSheetName(sheetName) {
     sheetName = sheetName.trim();
     if (!sheetName) {
@@ -15,7 +14,6 @@ export default function generateColumnFormula() {
       return;
     }
 
-    // 🟢 Bước 2: Hỏi cột cần lấy
     rl.question("Nhập cột muốn lấy (ví dụ: A): ", function handleColumnInput(column) {
       column = column.trim().toUpperCase();
       if (!column.match(/^[A-Z]+$/)) {
@@ -24,7 +22,6 @@ export default function generateColumnFormula() {
         return;
       }
 
-      // 🟢 Bước 3: Hỏi dòng bắt đầu
       rl.question("Nhập dòng bắt đầu (ví dụ: 4): ", function handleStartRow(startRow) {
         startRow = parseInt(startRow.trim());
         if (isNaN(startRow) || startRow <= 0) {
@@ -33,7 +30,6 @@ export default function generateColumnFormula() {
           return;
         }
 
-        // 🟢 Bước 4: Hỏi dòng kết thúc
         rl.question("Nhập dòng kết thúc (ví dụ: 200): ", function handleEndRow(endRow) {
           endRow = parseInt(endRow.trim());
           if (isNaN(endRow) || endRow < startRow) {
@@ -45,14 +41,18 @@ export default function generateColumnFormula() {
           const range = `${column}${startRow}:${column}${endRow}`;
           const base = `'${sheetName}'!${range}`;
 
-          // 🟢 Bước 5: Hỏi có muốn filter không
           rl.question("Có muốn FILTER dữ liệu không? (y/n): ", function handleFilterChoice(choice) {
             choice = choice.trim().toLowerCase();
 
             if (choice === "y" || choice === "yes") {
-              // 🟢 Bước 6: Hỏi loại filter
               rl.question(
-                "Chọn kiểu filter:\n1. Loại bỏ ô rỗng\n2. Loại bỏ ô bằng 0\n3. Loại bỏ cả ô rỗng và bằng 0\nNhập 1 / 2 / 3: ",
+                "Chọn kiểu filter:\n" +
+                  "1️⃣ Loại bỏ ô rỗng\n" +
+                  "2️⃣ Loại bỏ ô bằng 0\n" +
+                  "3️⃣ Loại bỏ cả ô rỗng và bằng 0\n" +
+                  "4️⃣ Lọc bỏ trùng (Unique)\n" +
+                  "5️⃣ Lọc bỏ trùng + lọc rỗng + lọc bằng 0\n" +
+                  "Nhập 1 / 2 / 3 / 4 / 5: ",
                 function handleFilterType(filterType) {
                   let formula = "";
 
@@ -66,8 +66,14 @@ export default function generateColumnFormula() {
                     case "3":
                       formula = `=FILTER(${base}; (${base}<>"" )*(${base}<>0) )`;
                       break;
+                    case "4":
+                      formula = `=UNIQUE(FILTER(${base}; ${base}<>"" ))`;
+                      break;
+                    case "5":
+                      formula = `=UNIQUE(FILTER(${base}; (${base}<>"" )*(${base}<>0) ))`;
+                      break;
                     default:
-                      console.log("❌ Vui lòng chọn 1, 2 hoặc 3.");
+                      console.log("❌ Vui lòng chọn 1, 2, 3, 4 hoặc 5.");
                       rl.close();
                       return;
                   }
