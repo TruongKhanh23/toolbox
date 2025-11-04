@@ -1,9 +1,26 @@
 # merge_data.ps1
-# Phiên bản nâng cấp
-# - Chuyển DOANH_THU -> TIEN_DA_VE_TAI_KHOAN_CTY
-# - Đổi format tên file: MOMO_TIEN_DA_VE_TAI_KHOAN_CTY_THANG_09.2025.xlsx
+# Phiên bản nâng cấp có rẽ nhánh "Kế toán" / "Khác"
 # Tác giả: ChatGPT (GPT-5)
-# Ngày cập nhật: 02/11/2025
+# Ngày cập nhật: 04/11/2025
+
+# --- Hỏi loại merge ---
+Write-Host "`nBan muon merge Excel loai nao?"
+Write-Host "1. Ke toan"
+Write-Host "2. Khac"
+do {
+    $mergeTypeStr = Read-Host "Nhap so tuong ung (1 hoac 2)"
+    if ($mergeTypeStr -match '^[12]$') {
+        $mergeType = [int]$mergeTypeStr
+    } else {
+        $mergeType = 0
+    }
+} while ($mergeType -notin 1,2)
+
+if ($mergeType -eq 1) {
+    Write-Host "`n→ Che do: Ke toan"
+} else {
+    Write-Host "`n→ Che do: Khac"
+}
 
 # --- Hỏi dòng bắt đầu và kết thúc ---
 $startRow = Read-Host "Nhap dong du lieu bat dau"
@@ -12,47 +29,48 @@ $endRow = Read-Host "Nhap dong du lieu ket thuc"
 # --- Hỏi tên sheet ---
 $sheetName = Read-Host "Nhap ten sheet can xu ly"
 
-# --- Chọn kênh ---
-$channels = @("ZALOPAY","SHOPEE","GRAB","XANHSM","VILL","RYO","TIEN_MAT","BE","VNPAY","MOMO")
-Write-Host "`nBan dang xu ly cho kenh nao?"
-for ($i=0; $i -lt $channels.Count; $i++) {
-    Write-Host "$($i+1). $($channels[$i])"
-}
-do {
-    $channelIndexStr = Read-Host "Nhap so tuong ung (1-$($channels.Count))"
-    if ($channelIndexStr -match '^\d+$') {
-        $channelIndex = [int]$channelIndexStr
-    } else {
-        $channelIndex = 0
+# --- Nếu là Ke toan thì cần chọn Kênh và Loại dữ liệu ---
+if ($mergeType -eq 1) {
+    # --- Chọn kênh ---
+    $channels = @("ZALOPAY","SHOPEE","GRAB","XANHSM","VILL","RYO","TIEN_MAT","BE","VNPAY","MOMO")
+    Write-Host "`nBan dang xu ly cho kenh nao?"
+    for ($i=0; $i -lt $channels.Count; $i++) {
+        Write-Host "$($i+1). $($channels[$i])"
     }
-} while ($channelIndex -lt 1 -or $channelIndex -gt $channels.Count)
-$channel = $channels[$channelIndex - 1]
-Write-Host "Ban chon kenh: $channel"
+    do {
+        $channelIndexStr = Read-Host "Nhap so tuong ung (1-$($channels.Count))"
+        if ($channelIndexStr -match '^\d+$') {
+            $channelIndex = [int]$channelIndexStr
+        } else {
+            $channelIndex = 0
+        }
+    } while ($channelIndex -lt 1 -or $channelIndex -gt $channels.Count)
+    $channel = $channels[$channelIndex - 1]
+    Write-Host "Ban chon kenh: $channel"
 
-# --- Chọn loại dữ liệu ---
-$dataTypes = @("DOANH_THU","CHI_PHI")
-Write-Host "`nBan dang xu ly LOAI DU LIEU nao?"
-for ($i=0; $i -lt $dataTypes.Count; $i++) {
-    Write-Host "$($i+1). $($dataTypes[$i])"
-}
-do {
-    $dataTypeStr = Read-Host "Nhap so tuong ung (1-2)"
-    if ($dataTypeStr -match '^\d+$') {
-        $dataTypeIndex = [int]$dataTypeStr
-    } else {
-        $dataTypeIndex = 0
+    # --- Chọn loại dữ liệu ---
+    $dataTypes = @("DOANH_THU","CHI_PHI")
+    Write-Host "`nBan dang xu ly LOAI DU LIEU nao?"
+    for ($i=0; $i -lt $dataTypes.Count; $i++) {
+        Write-Host "$($i+1). $($dataTypes[$i])"
     }
-} while ($dataTypeIndex -lt 1 -or $dataTypeIndex -gt $dataTypes.Count)
-$dataType = $dataTypes[$dataTypeIndex - 1]
+    do {
+        $dataTypeStr = Read-Host "Nhap so tuong ung (1-2)"
+        if ($dataTypeStr -match '^\d+$') {
+            $dataTypeIndex = [int]$dataTypeStr
+        } else {
+            $dataTypeIndex = 0
+        }
+    } while ($dataTypeIndex -lt 1 -or $dataTypeIndex -gt $dataTypes.Count)
+    $dataType = $dataTypes[$dataTypeIndex - 1]
 
-# --- Tự động đổi tên nếu là DOANH_THU ---
-if ($dataType -eq "DOANH_THU") {
-    $dataTypeOut = "TIEN_DA_VE_TAI_KHOAN_CTY"
-} else {
-    $dataTypeOut = $dataType
+    if ($dataType -eq "DOANH_THU") {
+        $dataTypeOut = "TIEN_DA_VE_TAI_KHOAN_CTY"
+    } else {
+        $dataTypeOut = $dataType
+    }
+    Write-Host "Ban chon loai du lieu: $dataTypeOut"
 }
-
-Write-Host "Ban chon loai du lieu: $dataTypeOut"
 
 # --- Hàm chuyển chữ cái sang số cột ---
 function Get-ColumnNumber($prompt) {
@@ -93,41 +111,40 @@ for ($i=1; $i -le $colCount; $i++) {
 Write-Host "`nBan da chon cac cot:"
 $columns | ForEach-Object { Write-Host " - $($_.Name): Cot $($_.Index)" }
 
-# --- Folder hiện tại ---
 $folder = $PSScriptRoot
 
-# --- Lấy file đầu tiên ---
-$firstFile = Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.BaseName -notmatch "_Merged$" } | Select-Object -First 1
-if (-not $firstFile) {
-    Write-Host "Khong tim thay file Excel nao trong folder!"
-    exit
-}
-
-# --- Xác định tháng từ file đầu tiên ---
-$dateParts = $firstFile.BaseName -split '\.'
-if ($dateParts.Count -ge 3) {
-    $monthYear = "$($dateParts[1]).$($dateParts[2])"
+# --- Xác định tên file output ---
+if ($mergeType -eq 1) {
+    $firstFile = Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.BaseName -notmatch "_Merged$" } | Select-Object -First 1
+    if (-not $firstFile) { Write-Host "Khong tim thay file Excel nao trong folder!"; exit }
+    $dateParts = $firstFile.BaseName -split '\.'
+    if ($dateParts.Count -ge 3) {
+        $monthYear = "$($dateParts[1]).$($dateParts[2])"
+    } else {
+        $monthYear = (Get-Date -Format "MM.yyyy")
+    }
+    $thangPart = "THANG_$monthYear"
+    $outputFileName = "${channel}_${dataTypeOut}_${thangPart}.xlsx"
 } else {
-    $monthYear = (Get-Date -Format "MM.yyyy")
+    $outputFileName = "Merge_Excel_Result.xlsx"
 }
-$thangPart = "THANG_$monthYear"
 
-# --- Tên file tổng hợp (format mới) ---
-$outputFileName = "${channel}_${dataTypeOut}_${thangPart}.xlsx"
 $outputFile = Join-Path $folder $outputFileName
 Write-Host "`nFile tong hop se duoc tao: $outputFile`n"
 
-# --- Tạo Excel COM object ---
+# --- Excel COM ---
 $excel = New-Object -ComObject Excel.Application
 $excel.Visible = $false
 $excel.DisplayAlerts = $false
-
-# --- Workbook output ---
 $wbOut = $excel.Workbooks.Add()
 $wsOut = $wbOut.Sheets.Item(1)
 
 # --- Header ---
-$wsOut.Cells.Item(1,1) = "Ngay"
+if ($mergeType -eq 1) {
+    $wsOut.Cells.Item(1,1) = "Ngay"
+} else {
+    $wsOut.Cells.Item(1,1) = "Nguon du lieu"
+}
 for ($i=0; $i -lt $columns.Count; $i++) {
     $wsOut.Cells.Item(1, $i + 2) = $columns[$i].Name
 }
@@ -138,20 +155,24 @@ Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.FullName -ne $o
     $file = $_.FullName
     $fileName = $_.BaseName
 
-    $dateParts = $fileName -split '\.'
-    if ($dateParts.Count -ne 3) {
-        Write-Host "Bo qua $fileName (ten khong dung dd.mm.yyyy)"
-        return
+    # Nếu là "Ke toan" thì validate dd.mm.yyyy
+    if ($mergeType -eq 1) {
+        $dateParts = $fileName -split '\.'
+        if ($dateParts.Count -ne 3) {
+            Write-Host "Bo qua $fileName (ten khong dung dd.mm.yyyy)"
+            return
+        }
+        $day = [int]$dateParts[0]
+        $month = [int]$dateParts[1]
+        $year = [int]$dateParts[2]
+        $firstColValue = Get-Date -Year $year -Month $month -Day $day
+    } else {
+        $firstColValue = $fileName
     }
-    $day = [int]$dateParts[0]
-    $month = [int]$dateParts[1]
-    $year = [int]$dateParts[2]
-    $dateObj = Get-Date -Year $year -Month $month -Day $day
 
     try {
         $wb = $excel.Workbooks.Open($file)
         $ws = $wb.Sheets.Item($sheetName)
-        $null = $ws.UsedRange.Value2
         $usedRows = $ws.UsedRange.Rows.Count
         Write-Host "Dang xu ly: $fileName ($usedRows dong du lieu)"
 
@@ -161,18 +182,15 @@ Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.FullName -ne $o
             $hasData = $false
             $rowValues = @()
             foreach ($col in $columns) {
-                $cell = $ws.Cells.Item($r, $col.Index)
-                $val = $cell.Value2
-                if ($null -eq $val -or $val -eq "") {
-                    $val = $cell.Text
-                }
+                $val = $ws.Cells.Item($r, $col.Index).Value2
+                if ($null -eq $val -or $val -eq "") { $val = $ws.Cells.Item($r, $col.Index).Text }
                 $rowValues += $val
                 if ($val -ne "") { $hasData = $true }
             }
 
             if ($hasData) {
-                $wsOut.Cells.Item($rowOut,1) = $dateObj
-                $wsOut.Cells.Item($rowOut,1).NumberFormat = "dd/mm/yyyy"
+                $wsOut.Cells.Item($rowOut,1) = $firstColValue
+                if ($mergeType -eq 1) { $wsOut.Cells.Item($rowOut,1).NumberFormat = "dd/mm/yyyy" }
                 for ($i=0; $i -lt $rowValues.Count; $i++) {
                     $wsOut.Cells.Item($rowOut, $i + 2) = $rowValues[$i]
                 }
@@ -180,8 +198,8 @@ Get-ChildItem -Path $folder -Filter "*.xlsx" | Where-Object { $_.FullName -ne $o
             }
         }
 
-        Write-Host "→ Da xu ly xong $fileName"
         $wb.Close($false)
+        Write-Host "→ Da xu ly xong $fileName"
     } catch {
         Write-Host "⚠️ Loi khi mo file $fileName"
     }
@@ -192,5 +210,5 @@ $wbOut.SaveAs($outputFile)
 $wbOut.Close()
 $excel.Quit()
 
-Write-Host "`n✅ Da tao file tong hop:" $outputFile
+Write-Host "`n✅ Da tao file tong hop: $outputFile"
 Pause
