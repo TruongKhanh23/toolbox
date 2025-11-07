@@ -30,7 +30,7 @@ export default {
   11: generateColumnFormula,
   12: generatePriorityNamedFormulas,
   13: generateValidationVersionFormula,
-  14: generateBasicVlookup,
+  14: generateLookupFormula,
   15: conditionalFormattingByString,
   16: generateJsonFromExcelStructure,
   17: generateCountifFormula,
