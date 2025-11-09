@@ -11,7 +11,7 @@ import generateIndirectReplaceFormula from "./generate-indirect-replace-formula.
 import generateColumnFormula from "./generate-get-column-formula.js";
 import generatePriorityNamedFormulas from "./generate-priority-named-formula.js";
 import generateValidationVersionFormula from "./generate-validation-version-formula.js";
-import generateBasicVlookup from "./generate-basic-vlookup.js";
+import generateLookupFormula from "./generate-lookup-formula.js";
 import conditionalFormattingByString from "./conditional-formatting-by-string.js";
 import generateJsonFromExcelStructure from "./generate-json-from-excel-structure.js";
 import generateCountifFormula from "./generate-countif-formula.js";
@@ -30,7 +30,7 @@ export default {
   11: generateColumnFormula,
   12: generatePriorityNamedFormulas,
   13: generateValidationVersionFormula,
-  14: generateBasicVlookup,
+  14: generateLookupFormula,
   15: conditionalFormattingByString,
   16: generateJsonFromExcelStructure,
   17: generateCountifFormula,
