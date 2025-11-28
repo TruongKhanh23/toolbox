@@ -15,6 +15,7 @@ import generateLookupFormula from "./generate-lookup-formula.js";
 import conditionalFormattingByString from "./conditional-formatting-by-string.js";
 import generateJsonFromExcelStructure from "./generate-json-from-excel-structure.js";
 import generateCountifFormula from "./generate-countif-formula.js";
+import generateConditionalFormattingNotValidData from './generate-conditional-formatting-not-valid-data.js';
 
 export default {
   1: conditionalFormatingDuplicateValue,
@@ -34,4 +35,5 @@ export default {
   15: conditionalFormattingByString,
   16: generateJsonFromExcelStructure,
   17: generateCountifFormula,
+  18: generateConditionalFormattingNotValidData,
 };
