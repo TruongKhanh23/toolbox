@@ -26,13 +26,13 @@ export default function generateConditionalFormattingNotValidData() {
 
               // Công thức dạng TRUE/FALSE
               const formulaCount = 
-                `=COUNTIF('${sheet}'!$${sourceCol}$${startRow}:$${sourceCol}$${endRow}, ` +
+                `=COUNTIF('${sheet}'!$${sourceCol}$${startRow}:$${sourceCol}$${endRow}; ` +
                 `$${targetCol}${targetRow})=0`;
 
               // Công thức dạng IF với Valid/Invalid
               const formulaIfValid = 
-                `=IF($${targetCol}${targetRow}="","",IF(COUNTIF('${sheet}'!$${sourceCol}$${startRow}:$${sourceCol}$${endRow}, ` +
-                `$${targetCol}${targetRow})=0,"Invalid","Valid"))`;
+                `=IF($${targetCol}${targetRow}="";"Invalid";IF(OR($${targetCol}$${targetRow}="";COUNTIF('${sheet}'!$${sourceCol}$${startRow}:$${sourceCol}$${endRow}; ` +
+                `$${targetCol}${targetRow})=0);"Invalid";"Valid"))`;
 
               console.log("\n🎯 Công thức Excel tạo ra (TRUE/FALSE):");
               console.log(formulaCount);
