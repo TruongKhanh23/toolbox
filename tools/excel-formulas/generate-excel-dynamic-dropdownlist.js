@@ -30,7 +30,7 @@ export default function generateExcelDynamicDropdownlist() {
                 rowEnd = rowEnd.trim();
 
                 // Build MATCH & COUNTIF formula
-                const formula = `="${dataSheet}!$${dataCol}" & MATCH(${displaySheet}!$${parentCell}; ${dataSheet}!${parentCol}$${rowStart}:${parentCol}$${rowEnd}; 0) & ":$${dataCol}" & (MATCH(${displaySheet}!$${parentCell}; ${dataSheet}!${parentCol}$${rowStart}:${parentCol}$${rowEnd}; 0) + COUNTIF(${dataSheet}!${parentCol}$${rowStart}:${parentCol}$${rowEnd}; ${displaySheet}!$${parentCell}) - 1)`;
+                const formula = `="${dataSheet}!$${dataCol}" & MATCH('${displaySheet}'!$${parentCell}; '${dataSheet}'!${parentCol}$${rowStart}:${parentCol}$${rowEnd}; 0) & ":$${dataCol}" & (MATCH('${displaySheet}'!$${parentCell}; '${dataSheet}'!${parentCol}$${rowStart}:${parentCol}$${rowEnd}; 0) + COUNTIF('${dataSheet}'!${parentCol}$${rowStart}:${parentCol}$${rowEnd}; '${displaySheet}'!$${parentCell}) - 1)`;
 
                 console.log("\n✅ Công thức Excel sinh ra là:\n");
                 console.log(formula);
