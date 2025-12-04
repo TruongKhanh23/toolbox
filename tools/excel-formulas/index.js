@@ -16,6 +16,7 @@ import conditionalFormattingByString from "./conditional-formatting-by-string.js
 import generateJsonFromExcelStructure from "./generate-json-from-excel-structure.js";
 import generateCountifFormula from "./generate-countif-formula.js";
 import generateConditionalFormattingNotValidData from './generate-conditional-formatting-not-valid-data.js';
+import generateExcelDynamicDropdownlist from "./generate-excel-dynamic-dropdownlist.js";
 
 export default {
   1: conditionalFormatingDuplicateValue,
@@ -36,4 +37,5 @@ export default {
   16: generateJsonFromExcelStructure,
   17: generateCountifFormula,
   18: generateConditionalFormattingNotValidData,
+  19: generateExcelDynamicDropdownlist,
 };
