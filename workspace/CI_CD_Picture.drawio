@@ -1,0 +1,156 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.7">
+  <diagram name="Page-1" id="gey-hyAe5zqkc-Xd9AE7">
+    <mxGraphModel dx="1603" dy="905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GMAC1tM159_lQzjmJG1h-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-weight: normal; font-size: 11px;&quot;&gt;Application Component Repository&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="550" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-3" parent="GMAC1tM159_lQzjmJG1h-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Source Code" vertex="1">
+          <mxGeometry height="40" width="160" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-4" parent="GMAC1tM159_lQzjmJG1h-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Dockerfile&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20value%3D%22Source%20Code%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2240%22%20width%3D%22160%22%20x%3D%2260%22%20y%3D%22160%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="160" x="20" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-5" parent="GMAC1tM159_lQzjmJG1h-2" style="rounded=0;whiteSpace=wrap;html=1;" value=".gitlab-ci.yml" vertex="1">
+          <mxGeometry height="40" width="160" x="20" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-6" parent="GMAC1tM159_lQzjmJG1h-2" style="rounded=0;whiteSpace=wrap;html=1;" value=".dockerignore" vertex="1">
+          <mxGeometry height="20" width="160" x="20" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="System" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Application Component&lt;div&gt;Frontend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Application Component&lt;div&gt;Backend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Application Component&lt;div&gt;Database&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-11" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Shared Storage&lt;div&gt;Qumulo&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="967.5" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-14" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Cloud" vertex="1">
+          <mxGeometry height="410" width="750" x="810" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-15" parent="GMAC1tM159_lQzjmJG1h-14" style="swimlane;whiteSpace=wrap;html=1;" value="Cluster" vertex="1">
+          <mxGeometry height="340" width="570" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-22" parent="GMAC1tM159_lQzjmJG1h-15" style="swimlane;whiteSpace=wrap;html=1;" value="Worker Pool 1" vertex="1">
+          <mxGeometry height="280" width="340" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-30" parent="GMAC1tM159_lQzjmJG1h-22" style="swimlane;whiteSpace=wrap;html=1;" value="Worker node 1" vertex="1">
+          <mxGeometry height="250" width="210" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-32" parent="GMAC1tM159_lQzjmJG1h-30" style="swimlane;whiteSpace=wrap;html=1;" value="Pod" vertex="1">
+          <mxGeometry height="175" width="185" x="15" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-47" edge="1" parent="GMAC1tM159_lQzjmJG1h-32" source="GMAC1tM159_lQzjmJG1h-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="GMAC1tM159_lQzjmJG1h-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="55" y="70" />
+              <mxPoint x="55" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-35" parent="GMAC1tM159_lQzjmJG1h-32" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Container" vertex="1">
+          <mxGeometry height="75" width="75" x="85" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-41" parent="GMAC1tM159_lQzjmJG1h-32" style="rounded=0;whiteSpace=wrap;html=1;" value="Volume" vertex="1">
+          <mxGeometry height="40" width="75" x="85" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-48" parent="GMAC1tM159_lQzjmJG1h-32" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="/app/data" vertex="1">
+          <mxGeometry height="30" width="60" x="93" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-49" parent="GMAC1tM159_lQzjmJG1h-32" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;mount&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-size: 8px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;path&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="55" x="5" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-31" parent="GMAC1tM159_lQzjmJG1h-22" style="swimlane;whiteSpace=wrap;html=1;" value="Worker node 2" vertex="1">
+          <mxGeometry height="240" width="100" x="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-59" parent="GMAC1tM159_lQzjmJG1h-31" style="swimlane;whiteSpace=wrap;html=1;" value="Pod 1" vertex="1">
+          <mxGeometry height="65" width="70" x="15" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-61" parent="GMAC1tM159_lQzjmJG1h-31" style="swimlane;whiteSpace=wrap;html=1;" value="Pod 2" vertex="1">
+          <mxGeometry height="72.5" width="70" x="15" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-23" parent="GMAC1tM159_lQzjmJG1h-15" style="swimlane;whiteSpace=wrap;html=1;" value="Worker pool n" vertex="1">
+          <mxGeometry height="280" width="170" x="380" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-38" parent="GMAC1tM159_lQzjmJG1h-23" style="swimlane;whiteSpace=wrap;html=1;" value="Worker node n" vertex="1">
+          <mxGeometry height="240" width="140" x="15" y="31.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-39" parent="GMAC1tM159_lQzjmJG1h-38" style="swimlane;whiteSpace=wrap;html=1;" value="Pod" vertex="1">
+          <mxGeometry height="175" width="110" x="15" y="43.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-40" parent="GMAC1tM159_lQzjmJG1h-39" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Container" vertex="1">
+          <mxGeometry height="80" width="80" x="15" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-18" parent="GMAC1tM159_lQzjmJG1h-14" style="swimlane;whiteSpace=wrap;html=1;" value="Cluster" vertex="1">
+          <mxGeometry height="100" width="120" x="610" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-19" parent="GMAC1tM159_lQzjmJG1h-14" style="swimlane;whiteSpace=wrap;html=1;" value="Cluster" vertex="1">
+          <mxGeometry height="95" width="120" x="610" y="172.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-20" parent="GMAC1tM159_lQzjmJG1h-14" style="swimlane;whiteSpace=wrap;html=1;" value="Cluster" vertex="1">
+          <mxGeometry height="100" width="120" x="610" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-51" edge="1" parent="1" source="GMAC1tM159_lQzjmJG1h-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="GMAC1tM159_lQzjmJG1h-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PV" vertex="1">
+          <mxGeometry height="40" width="75" x="960" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PVC" vertex="1">
+          <mxGeometry height="40" width="75" x="960" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-46" edge="1" parent="1" source="GMAC1tM159_lQzjmJG1h-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="GMAC1tM159_lQzjmJG1h-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-52" edge="1" parent="1" source="GMAC1tM159_lQzjmJG1h-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="GMAC1tM159_lQzjmJG1h-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-78" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="300" width="640" x="270" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-64" parent="GMAC1tM159_lQzjmJG1h-78" style="swimlane;whiteSpace=wrap;html=1;" value="Before" vertex="1">
+          <mxGeometry height="240" width="240" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-70" parent="GMAC1tM159_lQzjmJG1h-64" style="swimlane;whiteSpace=wrap;html=1;" value="Source Code" vertex="1">
+          <mxGeometry height="90" width="210" x="20" y="30" as="geometry" />
+        </mxCell>
+        <UserObject label="// hardcode&amp;nbsp;&lt;br&gt;saveFile(&quot;/mnt/qumulo/data/file.txt&quot;)" link="// hardcode trong ứng dụng&#xa;saveFile(&quot;/mnt/qumulo/data/file.txt&quot;)" id="GMAC1tM159_lQzjmJG1h-65">
+          <mxCell parent="GMAC1tM159_lQzjmJG1h-70" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1">
+            <mxGeometry height="30" width="60" x="10" y="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-67" parent="GMAC1tM159_lQzjmJG1h-78" style="swimlane;whiteSpace=wrap;html=1;" value="After" vertex="1">
+          <mxGeometry height="240" width="330" x="290" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-71" parent="GMAC1tM159_lQzjmJG1h-67" style="swimlane;whiteSpace=wrap;html=1;" value="Source Code" vertex="1">
+          <mxGeometry height="90" width="305" x="15" y="30" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div&gt;import os&lt;/div&gt;&lt;div&gt;path = os.getenv(&quot;APP_DATA_PATH&quot;, &quot;/default/path&quot;)&lt;/div&gt;&lt;div&gt;saveFile(f&quot;{path}/file.txt&quot;)&lt;/div&gt;" link="// hardcode trong ứng dụng&#xa;saveFile(&quot;/mnt/qumulo/data/file.txt&quot;)" id="GMAC1tM159_lQzjmJG1h-72">
+          <mxCell parent="GMAC1tM159_lQzjmJG1h-71" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1">
+            <mxGeometry height="30" width="310" x="10" y="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-73" parent="GMAC1tM159_lQzjmJG1h-67" style="swimlane;whiteSpace=wrap;html=1;" value="Helm Chart" vertex="1">
+          <mxGeometry height="90" width="305" x="15" y="140" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div&gt;env:&lt;/div&gt;&lt;div&gt;&amp;nbsp; - name: APP_DATA_PATH&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; value: &quot;/app/data&quot;&lt;/div&gt;" link="// hardcode trong ứng dụng&#xa;saveFile(&quot;/mnt/qumulo/data/file.txt&quot;)" id="GMAC1tM159_lQzjmJG1h-74">
+          <mxCell parent="GMAC1tM159_lQzjmJG1h-73" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1">
+            <mxGeometry height="30" width="190" x="10" y="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="GMAC1tM159_lQzjmJG1h-77" parent="GMAC1tM159_lQzjmJG1h-78" style="swimlane;whiteSpace=wrap;html=1;" value="Update Source Code - Path Mapping" vertex="1">
+          <mxGeometry height="300" width="640" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

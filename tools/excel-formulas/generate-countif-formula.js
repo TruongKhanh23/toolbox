@@ -33,7 +33,7 @@ export default function generateCountifFormula() {
                   // Nếu chứa dấu nháy kép, cần escape lại để Excel hiểu đúng
                   const escapedValue = hardValue.replace(/"/g, '""');
 
-                  const formula = `=COUNTIF(${sheetName}!${countCol}$${rowStart}:${countCol}$${rowEnd}; "${escapedValue}")`;
+                  const formula = `=COUNTIF('${sheetName}'!${countCol}$${rowStart}:${countCol}$${rowEnd}; "${escapedValue}")`;
 
                   console.log("\n✅ Công thức Excel sinh ra là:\n");
                   console.log(formula);
@@ -44,7 +44,7 @@ export default function generateCountifFormula() {
                 rl.question("Nhập ô tham chiếu trong sheet hiện tại (ví dụ: A4): ", (cellRef) => {
                   cellRef = cellRef.trim().toUpperCase();
 
-                  const formula = `=COUNTIF(${sheetName}!${countCol}$${rowStart}:${countCol}$${rowEnd}; ${cellRef})`;
+                  const formula = `=COUNTIF('${sheetName}'!${countCol}$${rowStart}:${countCol}$${rowEnd}; ${cellRef})`;
 
                   console.log("\n✅ Công thức Excel sinh ra là:\n");
                   console.log(formula);

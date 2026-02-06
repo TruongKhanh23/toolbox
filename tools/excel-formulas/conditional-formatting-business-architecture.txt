@@ -1,0 +1,16 @@
+N/A — màu xám (RGB 239,239,239)
+=INDEX('Business Architecture'!$E$3:$E$200;
+       MATCH(D5;'Business Architecture'!$D$3:$D$200;0))="N/A"
+
+Low — màu cam nhạt (RGB 245,215,199)
+=INDEX('Business Architecture'!$E$3:$E$200;
+       MATCH(D5;'Business Architecture'!$D$3:$D$200;0))="Low"
+
+Medium — màu vàng nhạt (RGB 255,255,221)
+=INDEX('Business Architecture'!$E$3:$E$200;
+       MATCH(D5;'Business Architecture'!$D$3:$D$200;0))="Medium"
+
+High — màu xanh nhạt (RGB 218,239,195)
+=INDEX('Business Architecture'!$E$3:$E$200;
+       MATCH(D5;'Business Architecture'!$D$3:$D$200;0))="High"
+
